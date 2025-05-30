@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn, getLang } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import getDictionary from "@/dict/dict";
 
 const fontSans = FontSans({
@@ -13,8 +13,7 @@ const fontSans = FontSans({
 });
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { locale } = await params;
-  const lang = getLang(locale);
+  const lang = getLang(params.locale);
   const DICT = await getDictionary(lang);
   return {
     metadataBase: new URL(DICT.url),
@@ -22,10 +21,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       default: DICT.name,
       template: `%s | ${DICT.name}`,
     },
-    description: DICT.description,
+    description: DICT.header.description,
     openGraph: {
       title: `${DICT.name}`,
-      description: DICT.description,
+      description: DICT.header.description,
       url: DICT.url,
       siteName: `${DICT.name}`,
       locale: "en_US",
@@ -64,7 +63,7 @@ export default async function RootLayout({
   const lang = getLang(params.locale);
   const dict = await getDictionary(lang);
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased py-12 sm:py-24 px-6",

@@ -1,7 +1,5 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -14,33 +12,43 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: Params) {
   const lang = getLang(params.locale);
-  const dict = await getDictionary(lang);
+  const {
+    about,
+    header,
+    name,
+    initials,
+    avatarUrl,
+    services,
+    skills,
+    education,
+    contact,
+  } = await getDictionary(lang);
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl mx-auto">
       <section id="hero">
         <div className="space-y-8">
           <div className="gap-8 flex items-center justify-between">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-40 border">
+              <Avatar className="size-32 sm:size-40 border">
                 <AvatarImage
                   className="object-cover"
-                  alt={dict.name}
-                  src={dict.avatarUrl}
+                  alt={name}
+                  src={avatarUrl}
                 />
-                <AvatarFallback>{dict.initials}</AvatarFallback>
+                <AvatarFallback>{initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-3xl font-bold tracking-tighter sm:text-5xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${dict.name.split(" ")[0]} 👋`}
+                text={`${header.title} 👋`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={dict.description}
+                text={header.description}
               />
             </div>
           </div>
@@ -48,11 +56,11 @@ export default async function Page({ params }: Params) {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">{about.title}</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {dict.summary}
+            {about.description}
           </Markdown>
         </BlurFade>
       </section>
@@ -84,21 +92,18 @@ export default async function Page({ params }: Params) {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <h2 className="text-xl font-bold">{education.title}</h2>
           </BlurFade>
-          {dict.education.map((education, id) => (
-            <BlurFade
-              key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
-            >
+          {education.items.map((item, id) => (
+            <BlurFade key={item.school} delay={BLUR_FADE_DELAY * 8 + id * 0.05}>
               <ResumeCard
-                key={education.school}
-                href={education.href}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                period={`${education.start} - ${education.end}`}
+                key={item.school}
+                href={item.href}
+                logoUrl={item.logoUrl}
+                altText={item.school}
+                title={item.school}
+                subtitle={item.degree}
+                period={`${item.start} - ${item.end}`}
               />
             </BlurFade>
           ))}
@@ -107,10 +112,10 @@ export default async function Page({ params }: Params) {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">{skills.title}</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {dict.skills.map((skill, id) => (
+            {skills.items.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>
@@ -118,7 +123,21 @@ export default async function Page({ params }: Params) {
           </div>
         </div>
       </section>
-      <section id="projects">
+      <section id="skills">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">{services.title}</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {services.items.map((service, id) => (
+              <BlurFade key={service} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={service}>{service}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -158,7 +177,7 @@ export default async function Page({ params }: Params) {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -207,21 +226,24 @@ export default async function Page({ params }: Params) {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+                {contact.badge}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                {contact.title}
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              {/* <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Want to chat? Just shoot me a dm{" "}
                 <Link
-                  href={`https://wa.me/${dict.contact.tel}`}
+                  href={`https://wa.me/${contact.tel}`}
                   className="text-blue-500 hover:underline"
                 >
                   with a direct question on Whatsapp
                 </Link>{" "}
                 and I&apos;ll respond whenever I can.
-              </p>
+              </p> */}
+              <Markdown className="prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert">
+                {contact.description}
+              </Markdown>
             </div>
           </BlurFade>
         </div>

@@ -34,7 +34,7 @@ export const ResumeCard = ({
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
       e.preventDefault();
-      setIsExpanded(!isExpanded);
+      setIsExpanded((prev) => !prev);
     }
   };
 

@@ -5,7 +5,7 @@ const dictionaries = {
   pl: () => import("./pl.json").then((module) => module.default),
 };
 
-const getDictionary = async (locale: Lang) => dictionaries[locale]();
+const getDictionary = async (lang: Lang) => dictionaries[lang]();
 
 export const LOCALES: Locale[] = ["pl-PL", "en-US", "en-GB"];
 
