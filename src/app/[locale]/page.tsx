@@ -3,12 +3,15 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import getDictionary from "@/dict/dict";
+import getDictionary, { LOCALES } from "@/dict/dict";
 import { getLang } from "@/lib/utils";
-import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
+
+export async function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function Page({ params }: Params) {
   const lang = getLang(params.locale);
