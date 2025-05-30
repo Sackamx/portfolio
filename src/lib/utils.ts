@@ -35,3 +35,8 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export function getLang(locale: Locale) {
+  const [lang] = locale.split("-");
+  return lang as Lang;
+}
