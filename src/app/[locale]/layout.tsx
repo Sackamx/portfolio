@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: DICT.header.description,
       url: DICT.url,
       siteName: `${DICT.name}`,
-      locale: "en_US",
+      locale: params.locale.split("-").join("_"),
       type: "website",
     },
     robots: {
@@ -44,10 +44,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     twitter: {
       title: `${DICT.name}`,
       card: "summary_large_image",
-    },
-    verification: {
-      google: "",
-      yandex: "",
     },
   };
 }
