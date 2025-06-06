@@ -5,7 +5,7 @@ import { cn, getLang } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "../globals.css";
-import getDictionary from "@/dict/dict";
+import getDictionary, { LOCALES } from "@/dict/dict";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,10 +25,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     openGraph: {
       title: `${DICT.name}`,
       description: DICT.header.description,
-      url: DICT.url,
+      url: `${DICT.url}/${params.locale}`,
       siteName: `${DICT.name}`,
       locale: params.locale.split("-").join("_"),
       type: "website",
+      alternateLocale: LOCALES.map((locale) => locale.split("-").join("_")),
     },
     robots: {
       index: true,
@@ -44,6 +45,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     twitter: {
       title: `${DICT.name}`,
       card: "summary_large_image",
+    },
+    alternates: {
+      canonical: `${DICT.url}/${params.locale}`,
     },
   };
 }
