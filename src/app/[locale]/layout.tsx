@@ -82,7 +82,7 @@ export default async function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <main className="min-h-[100dvh] max-w-3xl mx-auto pb-12 sm:pb-24">
+            <main className="min-h-[100dvh] max-w-3xl mx-auto pb-24">
               {children}
               <section id="contact">
                 <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
@@ -94,7 +94,7 @@ export default async function RootLayout({
                       <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                         {dict.contact.title}
                       </h2>
-                      <Markdown className="prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert">
+                      <Markdown className="prose max-w-full text-pretty font-sans sm:text-lg text-muted-foreground dark:prose-invert">
                         {dict.contact.description}
                       </Markdown>
                     </div>

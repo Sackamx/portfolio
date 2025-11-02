@@ -152,7 +152,7 @@ export default async function Page({ params }: Params) {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {projects.title}
                 </h2>
-                <p className="text-muted-foreground text-lg text-pretty prose dark:prose-invert">
+                <p className="text-muted-foreground sm:text-lg text-pretty prose dark:prose-invert">
                   {projects.description}
                 </p>
               </div>

@@ -80,14 +80,14 @@ export default async function Page({
   return (
     <div className="pt-8 sm:pt-16 flex flex-col gap-10 mb-12">
       <section id="header" className="space-y-4">
-        <div className="flex items-center justify-between gap-4 mb-6">
+        <div className="flex items-center justify-between gap-4 mb-10">
           <Link
             className="flex items-center gap-2 text-sm font-medium"
             href={`/${locale}`}
           >
             <ChevronLeft size={16} strokeWidth={3} /> {back}
           </Link>
-          <time className="font-sans text-sm">{dict.dates}</time>
+          <time className="font-sans text-sm text-right">{dict.dates}</time>
         </div>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl/none">
           {dict.title}
@@ -96,7 +96,7 @@ export default async function Page({
           {dict.description}
         </Markdown>
       </section>
-      <section id="showcase" className="flex gap-6">
+      <section id="showcase" className="flex flex-col sm:flex-row gap-6">
         <Carousel className="w-full border border-border bg-muted rounded-md overflow-hidden [&_*]:h-full [&_div]:ml-0">
           <CarouselContent>
             {dict.images.map((image, i) => (
@@ -114,7 +114,7 @@ export default async function Page({
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="flex flex-col gap-4">
+        <div className="flex sm:flex-col gap-4">
           {dict.images.map((image, i) => (
             <div
               className="size-24 rounded-md border border-border overflow-hidden relative"
@@ -131,7 +131,7 @@ export default async function Page({
           ))}
         </div>
       </section>
-      <section>
+      <section id="content">
         <Content />
       </section>
     </div>
