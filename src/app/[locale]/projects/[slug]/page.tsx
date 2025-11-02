@@ -82,12 +82,14 @@ export default async function Page({
       <section id="header" className="space-y-4">
         <div className="flex items-center justify-between gap-4 mb-10">
           <Link
-            className="flex items-center gap-2 text-sm font-medium"
+            className="flex items-center gap-2 text-xs sm:text-sm font-medium"
             href={`/${locale}`}
           >
             <ChevronLeft size={16} strokeWidth={3} /> {back}
           </Link>
-          <time className="font-sans text-sm text-right">{dict.dates}</time>
+          <time className="font-sans text-xs sm:text-sm text-right">
+            {dict.dates}
+          </time>
         </div>
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl/none">
           {dict.title}

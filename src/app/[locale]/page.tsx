@@ -158,7 +158,7 @@ export default async function Page({ params }: Params) {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-6 sm:gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {Object.entries(projects.items).map(([slug, project], id) => (
               <BlurFade
                 key={project.title}
