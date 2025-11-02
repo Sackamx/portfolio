@@ -37,6 +37,36 @@
       "Product Visualization"
     ]
   },
+  "projects": {
+    "back": "Powrót do strony głównej",
+    "badge": "Projects",
+    "title": "Check out my latest work",
+    "description": "I've worked on a variety of projects, from simple mockups to complex layouts. Here are a few of my favorites.",
+    "items": {
+      "vasabi": {
+        "title": "Vasabi Restaurant Menu",
+        "description": "Vasabi restaurant menu design combines **modern minimalism** with **traditional Japanese aesthetics**. The goal was to create a visual identity that feels both **elegant and authentic**, reflecting the fusion of Japanese and Asian cuisine.",
+        "dates": "Feb 2024 - Mar 2024",
+        "tags": ["Adobe Photoshop", "Adobe InDesign", "Adobe Photoshop"],
+        "images": [
+          "/projects/vasabi/mockup1.jpg",
+          "/projects/vasabi/mockup2.jpg",
+          "/projects/vasabi/menu.jpg",
+          "/projects/vasabi/menu2.jpg"
+        ]
+      },
+      "core-motion-physiotherapy": {
+        "title": "Core Motion Physiotherapy Brochure",
+        "description": "The **Core Motion Physiotherapy** brochure was designed to communicate the clinic’s mission of _“Pain-Free Living”_ while providing essential information about their physiotherapy services in a clear and approachable way. The tri-fold format ensures a professional and practical layout, perfect for distribution in clinics, community centers, and wellness events.",
+        "dates": "Aug 2024 - Sep 2024",
+        "tags": ["Adobe Photoshop", "Adobe InDesign", "Adobe Photoshop"],
+        "images": [
+          "/projects/core-motion-physiotherapy/mockup2.jpg",
+          "/projects/core-motion-physiotherapy/mockup3.jpg"
+        ]
+      }
+    }
+  },
   "navbar": [{ "href": "/", "name": "home", "label": "Home" }],
   "contact": {
     "email": "kamilasaczek04@gmail.com",
@@ -52,7 +82,7 @@
       },
       "instagram": {
         "name": "View Profile",
-        "url": "https://www.instagram.com/indivisu_al/",
+        "url": "https://www.instagram.com/kvisual_studio",
         "navbar": true
       },
       "email": {

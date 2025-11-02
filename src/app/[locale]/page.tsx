@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -7,7 +8,7 @@ import getDictionary, { LOCALES } from "@/dict/dict";
 import { getLang } from "@/lib/utils";
 import Markdown from "react-markdown";
 
-const BLUR_FADE_DELAY = 0.04;
+export const BLUR_FADE_DELAY = 0.04;
 
 export async function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
@@ -24,10 +25,10 @@ export default async function Page({ params }: Params) {
     services,
     skills,
     education,
-    contact,
+    projects,
   } = await getDictionary(lang);
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl mx-auto">
+    <div className="pt-12 sm:pt-24 flex flex-col gap-10">
       <section id="hero">
         <div className="space-y-8">
           <div className="gap-8 flex items-center justify-between">
@@ -126,7 +127,7 @@ export default async function Page({ params }: Params) {
           </div>
         </div>
       </section>
-      <section id="skills">
+      <section id="services">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">{services.title}</h2>
@@ -140,47 +141,46 @@ export default async function Page({ params }: Params) {
           </div>
         </div>
       </section>
-      {/* <section id="projects">
+      <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                  {projects.badge}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  {projects.title}
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                <p className="text-muted-foreground text-lg text-pretty prose dark:prose-invert">
+                  {projects.description}
                 </p>
               </div>
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {dict.projects.map((project, id) => (
+            {Object.entries(projects.items).map(([slug, project], id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
+                  href={`/${params.locale}/projects/${slug}`}
                   key={project.title}
                   title={project.title}
                   description={project.description}
                   dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
+                  tags={project.tags}
+                  // tags={project.technologies}
+                  image={project.images[0]}
+                  // video={project.video}
+                  // links={project.links}
                 />
               </BlurFade>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
       {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -224,33 +224,6 @@ export default async function Page({ params }: Params) {
           </BlurFade>
         </div>
       </section> */}
-      <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                {contact.badge}
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                {contact.title}
-              </h2>
-              {/* <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={`https://wa.me/${contact.tel}`}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on Whatsapp
-                </Link>{" "}
-                and I&apos;ll respond whenever I can.
-              </p> */}
-              <Markdown className="prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert">
-                {contact.description}
-              </Markdown>
-            </div>
-          </BlurFade>
-        </div>
-      </section>
-    </main>
+    </div>
   );
 }

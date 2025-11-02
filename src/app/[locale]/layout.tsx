@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "../globals.css";
 import getDictionary, { LOCALES } from "@/dict/dict";
+import BlurFade from "@/components/magicui/blur-fade";
+import { BLUR_FADE_DELAY } from "./page";
+import Markdown from "react-markdown";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,10 +26,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
     description: DICT.header.description,
     openGraph: {
-      title: `${DICT.name}`,
+      title: DICT.name,
       description: DICT.header.description,
       url: `${DICT.url}/${params.locale}`,
-      siteName: `${DICT.name}`,
+      siteName: DICT.name,
       locale: params.locale.split("-").join("_"),
       type: "website",
       alternateLocale: LOCALES.map((locale) => locale.split("-").join("_")),
@@ -48,6 +51,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     },
     alternates: {
       canonical: `${DICT.url}/${params.locale}`,
+      languages: LOCALES.reduce(
+        (prev, locale) => ({
+          ...prev,
+          [locale]: `${DICT.url}/${locale}`,
+        }),
+        {} as Record<string, string>
+      ),
     },
   };
 }
@@ -66,13 +76,32 @@ export default async function RootLayout({
     <html lang={lang} suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased px-6",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            {children}
+            <main className="min-h-[100dvh] max-w-3xl mx-auto pb-12 sm:pb-24">
+              {children}
+              <section id="contact">
+                <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+                  <BlurFade delay={BLUR_FADE_DELAY * 16}>
+                    <div className="space-y-3">
+                      <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                        {dict.contact.badge}
+                      </div>
+                      <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                        {dict.contact.title}
+                      </h2>
+                      <Markdown className="prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert">
+                        {dict.contact.description}
+                      </Markdown>
+                    </div>
+                  </BlurFade>
+                </div>
+              </section>
+            </main>
             <Navbar dict={dict} />
           </TooltipProvider>
         </ThemeProvider>
