@@ -1,5 +1,4 @@
-import { LOCALES } from "@/dict/dict";
-import { PROJECTS } from "@/lib/const";
+import { LOCALES, PROJECTS } from "@/lib/const";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {

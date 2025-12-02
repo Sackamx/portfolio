@@ -4,7 +4,8 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import getDictionary, { LOCALES } from "@/dict/dict";
+import getDictionary from "@/dict/dict";
+import { LOCALES } from "@/lib/const";
 import { getLang } from "@/lib/utils";
 import Markdown from "react-markdown";
 

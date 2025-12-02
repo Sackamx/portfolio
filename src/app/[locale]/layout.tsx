@@ -5,10 +5,11 @@ import { cn, getLang } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "../globals.css";
-import getDictionary, { LOCALES } from "@/dict/dict";
+import getDictionary from "@/dict/dict";
 import BlurFade from "@/components/magicui/blur-fade";
 import { BLUR_FADE_DELAY } from "./page";
 import Markdown from "react-markdown";
+import { LOCALES } from "@/lib/const";
 
 const fontSans = FontSans({
   subsets: ["latin"],

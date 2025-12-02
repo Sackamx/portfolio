@@ -11,6 +11,8 @@ import { Dict } from "@/dict/dict";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Icons } from "./icons";
+import { Select, SelectContent, SelectTrigger, SelectValue } from "./ui/select";
+import LanguageSelect from "./language-select";
 
 type Props = {
   dict: Dict;
@@ -82,6 +84,9 @@ export default function Navbar({ dict }: Props) {
               <p>Theme</p>
             </TooltipContent>
           </Tooltip>
+        </DockIcon>
+        <DockIcon className="px-2 min-w-14 shrink-0">
+          <LanguageSelect />
         </DockIcon>
       </Dock>
     </div>

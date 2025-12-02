@@ -3,8 +3,8 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import getDictionary, { LOCALES } from "@/dict/dict";
-import { PROJECTS } from "@/lib/const";
+import getDictionary from "@/dict/dict";
+import { LOCALES, PROJECTS } from "@/lib/const";
 import { getLang } from "@/lib/utils";
 import { ChevronLeft } from "lucide-react";
 import { Metadata } from "next";
