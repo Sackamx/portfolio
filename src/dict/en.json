@@ -49,7 +49,7 @@
         "title": "Vasabi Restaurant Menu",
         "description": "Vasabi restaurant menu design combines **modern minimalism** with **traditional Japanese aesthetics**. The goal was to create a visual identity that feels both **elegant and authentic**, reflecting the fusion of Japanese and Asian cuisine.",
         "dates": "Feb 2024 - Mar 2024",
-        "tags": ["Adobe Photoshop", "Adobe InDesign", "Adobe Photoshop"],
+        "tags": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
         "images": [
           "/projects/vasabi/mockup1.jpg",
           "/projects/vasabi/mockup2.jpg",
@@ -61,10 +61,21 @@
         "title": "Core Motion Physiotherapy Brochure",
         "description": "The **Core Motion Physiotherapy** brochure was designed to communicate the clinic’s mission of _“Pain-Free Living”_ while providing essential information about their physiotherapy services in a clear and approachable way. The tri-fold format ensures a professional and practical layout, perfect for distribution in clinics, community centers, and wellness events.",
         "dates": "Aug 2024 - Sep 2024",
-        "tags": ["Adobe Photoshop", "Adobe InDesign", "Adobe Photoshop"],
+        "tags": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
         "images": [
           "/projects/core-motion-physiotherapy/mockup2.jpg",
           "/projects/core-motion-physiotherapy/mockup3.jpg"
+        ]
+      },
+      "kvisual": {
+        "title": "Branding / visual identity design for Kvisual",
+        "description": "",
+        "dates": "Jun 2025 - Jul 2025",
+        "tags": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "images": [
+          "/projects/kvisual/kvisualbrand-10.jpg",
+          "/projects/kvisual/kvisualbrand-11.jpg",
+          "/projects/kvisual/kvisualbrand-05.jpg"
         ]
       }
     }

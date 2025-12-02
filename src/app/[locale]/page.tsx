@@ -2,11 +2,11 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import getDictionary from "@/dict/dict";
 import { LOCALES } from "@/lib/const";
 import { getLang } from "@/lib/utils";
+import Image from "next/image";
 import Markdown from "react-markdown";
 
 export const BLUR_FADE_DELAY = 0.04;
@@ -34,14 +34,17 @@ export default async function Page({ params }: Params) {
         <div className="space-y-8">
           <div className="gap-8 flex items-center justify-between">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-32 sm:size-40 border">
-                <AvatarImage
-                  className="object-cover"
+              <div className="size-32 sm:size-40 border rounded-full overflow-hidden">
+                <Image
+                  width={240}
+                  height={240}
+                  priority
+                  loading="eager"
+                  className="object-cover w-full h-full"
                   alt={name}
                   src={avatarUrl}
                 />
-                <AvatarFallback>{initials}</AvatarFallback>
-              </Avatar>
+              </div>
             </BlurFade>
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
@@ -160,6 +163,7 @@ export default async function Page({ params }: Params) {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-6 sm:gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {/* <div className="grid grid-cols-1 gap-6 sm:gap-3 sm:flex flex-wrap max-w-[800px] mx-auto"> */}
             {Object.entries(projects.items).map(([slug, project], id) => (
               <BlurFade
                 key={project.title}
