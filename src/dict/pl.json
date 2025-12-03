@@ -69,13 +69,16 @@
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna dla Kvisual",
-        "description": "",
+        "description": "KVISUAL to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory (czerń, biel oraz kreatywny fiolet #6020B8) oraz **geometryczne logo inspirowane futurystycznym designem**.",
         "dates": "Cze 2025 - Lip 2025",
         "tags": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
         "images": [
+          "/projects/kvisual/kvisual-cards.jpg",
           "/projects/kvisual/kvisualbrand-10.jpg",
           "/projects/kvisual/kvisualbrand-11.jpg",
-          "/projects/kvisual/kvisualbrand-05.jpg"
+          "/projects/kvisual/kvisualbrand-05.jpg",
+          "/projects/kvisual/kvisualbrand-03.jpg",
+          "/projects/kvisual/kvisualbrand--0.png"
         ]
       }
     }

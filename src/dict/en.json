@@ -68,14 +68,17 @@
         ]
       },
       "kvisual": {
-        "title": "Branding / visual identity design for Kvisual",
-        "description": "",
+        "title": "Branding / Visual identity design for Kvisual",
+        "description": "KVISUAL is a **modern graphic design studio** specializing in visual identity design, advertising materials, and promotional campaigns. The brand combines **simplicity with expressiveness**, using clean lines, contrasting colors (black, white, and creative purple #6020B8), and a **geometric, futuristic-inspired logo**.",
         "dates": "Jun 2025 - Jul 2025",
         "tags": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
         "images": [
+          "/projects/kvisual/kvisual-cards.jpg",
           "/projects/kvisual/kvisualbrand-10.jpg",
           "/projects/kvisual/kvisualbrand-11.jpg",
-          "/projects/kvisual/kvisualbrand-05.jpg"
+          "/projects/kvisual/kvisualbrand-05.jpg",
+          "/projects/kvisual/kvisualbrand-03.jpg",
+          "/projects/kvisual/kvisualbrand--0.png"
         ]
       }
     }

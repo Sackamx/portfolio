@@ -14,7 +14,12 @@ const components: MDXComponents = {
       className="prose max-w-full text-pretty font-sans text-sm/relaxed text-muted-foreground dark:prose-invert"
     />
   ),
-  ul: (props) => <ul {...props} className="list-disc list-outside pl-4 my-2" />,
+  ul: (props) => (
+    <ul
+      {...props}
+      className="list-disc list-outside pl-4 my-2 marker:text-foreground prose text-pretty font-sans text-sm/relaxed text-foreground dark:prose-invert"
+    />
+  ),
   blockquote: (props) => (
     <div className="px-4 py-2 bg-muted rounded-md border border-border max-w-max my-2">
       <blockquote

@@ -1,7 +1,10 @@
 import {
   Carousel,
+  CarouselButton,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import getDictionary from "@/dict/dict";
 import { LOCALES, PROJECTS } from "@/lib/const";
@@ -98,40 +101,41 @@ export default async function Page({
           {dict.description}
         </Markdown>
       </section>
-      <section id="showcase" className="flex flex-col sm:flex-row gap-6">
-        <Carousel className="w-full border border-border bg-muted rounded-md overflow-hidden [&_*]:h-full [&_div]:ml-0">
-          <CarouselContent>
+      <section id="showcase" className="">
+        <Carousel className="w-full flex flex-col gap-6">
+          <div className="relative h-full w-full border border-border bg-muted rounded-md overflow-hidden [&_div]:ml-0">
+            <CarouselPrevious className="absolute left-3 top-1/2 -translate-y-1/2 w-10 !h-10 z-10" />
+            <CarouselContent>
+              {dict.images.map((image, i) => (
+                <CarouselItem className="min-h-96 relative" key={i}>
+                  <Image
+                    className="select-none object-contain"
+                    priority={i === 0}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    fill
+                    sizes="(min-width: 768px) 768px, 100vw"
+                    src={image}
+                    alt={dict.title}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselNext className="absolute right-3 top-1/2 -translate-y-1/2 w-10 !h-10 z-10" />
+          </div>
+          <div className="flex flex-wrap gap-4">
             {dict.images.map((image, i) => (
-              <CarouselItem className="min-h-96 relative" key={i}>
+              <CarouselButton index={i} key={i}>
                 <Image
-                  className="select-none object-contain"
-                  priority={i === 0}
-                  loading={i === 0 ? "eager" : "lazy"}
-                  fill
-                  sizes="(min-width: 768px) 768px, 100vw"
+                  className="select-none object-cover w-full h-full"
+                  width={512}
+                  height={512}
                   src={image}
-                  alt={image}
+                  alt={dict.title}
                 />
-              </CarouselItem>
+              </CarouselButton>
             ))}
-          </CarouselContent>
+          </div>
         </Carousel>
-        <div className="flex sm:flex-col gap-4">
-          {dict.images.map((image, i) => (
-            <div
-              className="size-24 rounded-md border border-border overflow-hidden relative"
-              key={i}
-            >
-              <Image
-                className="select-none object-cover w-full h-full"
-                width={512}
-                height={512}
-                src={image}
-                alt={image}
-              />
-            </div>
-          ))}
-        </div>
       </section>
       <section id="content">
         <Content />
