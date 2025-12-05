@@ -31,12 +31,46 @@
   "services": {
     "title": "Usługi",
     "items": [
-      "DTP",
-      "Grafika Rastrowa",
-      "Grafika Wektorowa",
-      "Digital Painting",
-      "Brand Design",
-      "Wizualizacja Produktu"
+      {
+        "title": "Materiały marketingowe",
+        "description": "Tworzę nowoczesne i estetyczne ulotki, plakaty, katalogi, banery, rolki oraz social media assets, dopasowane do charakteru marki i aktualnych trendów."
+      },
+      {
+        "title": "Ilustracje cyfrowe",
+        "description": "Wykonuję spersonalizowane ilustracje - od prostych ikon wektorowych po digital painting - idealne do publikacji, stron internetowych i materiałów reklamowych."
+      },
+      {
+        "title": "Projektowanie opakowań",
+        "description": "Projektuję funkcjonalne opakowania, łącząc estetykę z jasnym przekazem marki oraz wymaganiami technologicznymi produkcji."
+      },
+      {
+        "title": "Identyfikacja wizualna",
+        "description": "Kompleksowo buduję identyfikację wizualną - logo, palety kolorów, typografię i style graficzne - tworząc spójny i profesjonalny wizerunek marki."
+      },
+      {
+        "title": "DTP",
+        "description": "Przygotowuję pliki do profesjonalnego druku zgodnie ze standardami, dbając o jakość, kolory, układ i wymagania drukarni."
+      },
+      {
+        "title": "Obróbka zdjęć",
+        "description": "Zajmuję się retuszem, korekcją barw, montażem zdjęć oraz fotomanipulacją, tworząc spójne i dopracowane materiały wizualne."
+      },
+      {
+        "title": "Wizualizacje produktowe",
+        "description": "Przygotowuję realistyczne wizualizacje produktów, opakowań i komponentów w formie grafik 2D/3D, idealne do prezentacji, kampanii i e-commerce."
+      },
+      {
+        "title": "UX/UI",
+        "description": "Projektuję estetyczne interfejsy oraz układy stron internetowych i aplikacji, dbając o przejrzystość, funkcjonalność i spójny styl wizualny."
+      },
+      {
+        "title": "Moodboardy i koncepcje kreatywne",
+        "description": "Przygotowuję moodboardy, style direction oraz koncepcje wizualne, które pomagają określić kierunek projektowy dla marki lub kampanii."
+      },
+      {
+        "title": "Animacje 2D",
+        "description": "Tworzę ożywione logotypy, ilustracje i animacje ruchomej typografii, idealne do social mediów, reklam, intro/outro oraz contentu promocyjnego."
+      }
     ]
   },
   "projects": {
@@ -59,7 +93,7 @@
       },
       "core-motion-physiotherapy": {
         "title": "Broszura Core Motion Physiotherapy",
-        "description": "Ulotka **Core Motion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki — _„Życie bez bólu”_ — oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
+        "description": "Ulotka **Core Motion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki - _„Życie bez bólu”_ - oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
         "dates": "Sie 2024 - Wrz 2024",
         "tags": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
         "images": [

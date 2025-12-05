@@ -31,12 +31,46 @@
   "services": {
     "title": "Services",
     "items": [
-      "DTP",
-      "Raster Graphics",
-      "Vector Graphics",
-      "Digital Painting",
-      "Brand Design",
-      "Product Visualization"
+      {
+        "title": "Marketing Materials",
+        "description": "I create modern and aesthetic promotional assets – leaflets, posters, catalogs, banners, reels, and social media graphics – tailored to the brand’s character and current design trends."
+      },
+      {
+        "title": "Digital Illustrations",
+        "description": "I produce custom illustrations, from simple vector icons to advanced digital paintings – ideal for publications, websites, and advertising materials."
+      },
+      {
+        "title": "Packaging Design",
+        "description": "I design functional and visually appealing packaging that combines strong aesthetics with clear brand messaging and production requirements."
+      },
+      {
+        "title": "Visual Identity",
+        "description": "I develop complete visual identities – logos, color palettes, typography, and graphic styles – creating a cohesive and professional brand image."
+      },
+      {
+        "title": "DTP & Print Preparation",
+        "description": "I prepare files for professional printing according to industry standards, ensuring high-quality output, accurate colors, layouts, and compliance with printing guidelines."
+      },
+      {
+        "title": "Photo Editing & Retouching",
+        "description": "I specialize in retouching, color correction, photo compositing, and photomanipulation, delivering polished and cohesive visual materials."
+      },
+      {
+        "title": "Product Visualizations",
+        "description": "I create realistic 2D/3D product visualizations for packaging, items, and components – perfect for presentations, campaigns, and e-commerce."
+      },
+      {
+        "title": "UX/UI Design",
+        "description": "I design clean and visually appealing interfaces and layouts for websites and applications, focusing on clarity, usability, and cohesive visual style."
+      },
+      {
+        "title": "Moodboards & Creative Concepts",
+        "description": "I prepare moodboards, style directions, and creative concepts that help define the visual direction of a brand or campaign."
+      },
+      {
+        "title": "2D Animations",
+        "description": "I create animated logos, illustrated elements, and kinetic typography – ideal for social media, advertisements, intros/outros, and promotional content."
+      }
     ]
   },
   "projects": {

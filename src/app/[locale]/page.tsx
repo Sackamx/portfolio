@@ -2,6 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import ServiceCard from "@/components/service-card";
 import { Badge } from "@/components/ui/badge";
 import getDictionary from "@/dict/dict";
 import { LOCALES } from "@/lib/const";
@@ -136,13 +137,16 @@ export default async function Page({ params }: Params) {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">{services.title}</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
+          <ul className="grid sm:grid-cols-2 gap-6 sm:gap-3">
             {services.items.map((service, id) => (
-              <BlurFade key={service} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={service}>{service}</Badge>
+              <BlurFade
+                key={service.title}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <ServiceCard {...service} index={id} key={service.title + id} />
               </BlurFade>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
       <section id="projects">
