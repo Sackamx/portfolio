@@ -127,6 +127,12 @@
           "/projects/kvisual/kvisualbrand--0.png"
         ]
       }
+    },
+    "in-progress": {
+      "title": "",
+      "description": "",
+      "dates": "Gru 2025 - Teraz",
+      "tags": []
     }
   },
   "navbar": [{ "href": "/", "name": "home", "label": "Home" }],

@@ -127,6 +127,12 @@
           "/projects/kvisual/kvisualbrand--0.png"
         ]
       }
+    },
+    "in-progress": {
+      "title": "",
+      "description": "",
+      "dates": "Dec 2025 - Now",
+      "tags": []
     }
   },
   "navbar": [{ "href": "/", "name": "home", "label": "Home" }],

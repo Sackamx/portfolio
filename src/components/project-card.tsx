@@ -15,8 +15,8 @@ import { ChevronRight } from "lucide-react";
 
 interface Props {
   title: string;
-  href: string;
-  description: string;
+  href?: string;
+  description?: string;
   dates: string;
   tags: readonly string[];
   link?: string;
@@ -43,13 +43,16 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
-    <article>
+    <article className="h-full">
       <Card
         className={
           "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full group/card"
         }
       >
-        <Link href={href} className={cn("block cursor-pointer", className)}>
+        <Link
+          href={href ?? "#"}
+          className={cn("block cursor-pointer", className)}
+        >
           {video && (
             <video
               src={video}
@@ -71,6 +74,13 @@ export function ProjectCard({
               />
             </div>
           )}
+          {!image && !video && (
+            <div className="h-40 bg-muted flex items-center justify-center">
+              <p className="prose text-sm dark:prose-invert text-pretty">
+                In progress...
+              </p>
+            </div>
+          )}
         </Link>
         <CardHeader className="p-4 pb-0">
           <div className="space-y-1">
@@ -82,9 +92,11 @@ export function ProjectCard({
                 .replace("www.", "")
                 .replace("/", "")}
             </div>
-            <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-              {description}
-            </Markdown>
+            {description && (
+              <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+                {description}
+              </Markdown>
+            )}
           </div>
         </CardHeader>
         <CardContent className="mt-auto flex flex-col p-4 pt-2">
