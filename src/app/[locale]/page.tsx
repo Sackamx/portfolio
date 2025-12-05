@@ -187,9 +187,9 @@ export default async function Page({ params }: Params) {
                 />
               </BlurFade>
             ))}
-            {projects["in-progress"] && (
+            {/* {projects["in-progress"] && (
               <ProjectCard {...projects["in-progress"]} />
-            )}
+            )} */}
           </div>
         </div>
       </section>

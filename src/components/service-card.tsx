@@ -38,7 +38,7 @@ export default function ServiceCard({ title, description, index }: Props) {
       <h3 className="font-semibold after:block after:h-px after:w-1/2 after:bg-foreground max-w-max">
         {title}
       </h3>
-      <p className="prose text-pretty dark:prose-invert text-sm">
+      <p className="prose text-pretty dark:prose-invert text-sm text-muted-foreground">
         {description}
       </p>
     </li>
