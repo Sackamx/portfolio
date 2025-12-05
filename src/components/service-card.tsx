@@ -33,7 +33,7 @@ const ICONS = [
 export default function ServiceCard({ title, description, index }: Props) {
   const Icon = ICONS[index];
   return (
-    <li className="border rounded-md border-border p-4 space-y-2">
+    <li className="border rounded-md border-border p-4 space-y-2 h-full">
       {Icon && <Icon size={20} className="shrink-0" />}
       <h3 className="font-semibold after:block after:h-px after:w-1/2 after:bg-foreground max-w-max">
         {title}

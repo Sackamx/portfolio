@@ -107,13 +107,13 @@ export default async function Page({
             <CarouselPrevious className="absolute left-3 top-1/2 -translate-y-1/2 w-10 !h-10 z-10" />
             <CarouselContent>
               {dict.images.map((image, i) => (
-                <CarouselItem className="min-h-96 relative" key={i}>
+                <CarouselItem className="h-96 relative" key={i}>
                   <Image
-                    className="select-none object-contain"
+                    className="select-none object-contain w-full h-full"
                     priority={i === 0}
                     loading={i === 0 ? "eager" : "lazy"}
-                    fill
-                    sizes="(min-width: 768px) 768px, 100vw"
+                    width={768}
+                    height={384}
                     src={image}
                     alt={dict.title}
                   />

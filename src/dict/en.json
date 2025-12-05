@@ -79,6 +79,18 @@
     "title": "Check out my latest work",
     "description": "I've worked on a variety of projects, from simple mockups to complex layouts. Here are a few of my favorites.",
     "items": {
+      "fuoco-nero": {
+        "title": "Fuoco Nero - Premium Coffee Brand Website",
+        "description": "Fuoco Nero is an exclusive premium coffee brand created for true connoisseurs. Its visual identity is built on a **dark, elegant aesthetic**, strong contrasts, and refined details that emphasize the luxurious character of the product - from packaging to the digital experience.",
+        "dates": "Nov 2025 - Dec 2025",
+        "tags": ["Adobe Photoshop"],
+        "images": [
+          "/projects/fuoco-nero/MacBook_Mockup_1.jpg",
+          "/projects/fuoco-nero/MacBook_Mockup_2.jpg",
+          "/projects/fuoco-nero/MacBook_Mockup_3.jpg",
+          "/projects/fuoco-nero/webmockup.jpg"
+        ]
+      },
       "vasabi": {
         "title": "Vasabi Restaurant Menu",
         "description": "Vasabi restaurant menu design combines **modern minimalism** with **traditional Japanese aesthetics**. The goal was to create a visual identity that feels both **elegant and authentic**, reflecting the fusion of Japanese and Asian cuisine.",

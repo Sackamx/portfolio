@@ -79,6 +79,18 @@
     "title": "Zobacz moją pracę",
     "description": "Pracowałam nad różnymi projektami - od prostych mockupów po zaawansowane layouty. Oto kilka najlepszych:",
     "items": {
+      "fuoco-nero": {
+        "title": "Strony internetowa marki kawy - Fuoco Nero",
+        "description": "Fuoco Nero to ekskluzywna marka kawy premium skierowana do koneserów. Jej identyfikacja wizualna opiera się na **ciemnej, eleganckiej stylistyce**, mocnych kontrastach oraz wysmakowanych detalach, które podkreślają luksusowy charakter produktu.",
+        "dates": "Lis 2025 - Gru 2025",
+        "tags": ["Adobe Photoshop"],
+        "images": [
+          "/projects/fuoco-nero/MacBook_Mockup_1.jpg",
+          "/projects/fuoco-nero/MacBook_Mockup_2.jpg",
+          "/projects/fuoco-nero/MacBook_Mockup_3.jpg",
+          "/projects/fuoco-nero/webmockup.jpg"
+        ]
+      },
       "vasabi": {
         "title": "Menu Restauracji Vasabi",
         "description": "Projekt menu restauracji Vasabi łączy **nowoczesny minimalizm** z **tradycyjną estetyką japońską**. Celem było stworzenie identyfikacji wizualnej, która jest jednocześnie **elegancka i autentyczna**, odzwierciedlając połączenie kuchni japońskiej i azjatyckiej.",
@@ -103,7 +115,7 @@
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna dla Kvisual",
-        "description": "KVISUAL to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory (czerń, biel oraz kreatywny fiolet #6020B8) oraz **geometryczne logo inspirowane futurystycznym designem**.",
+        "description": "KVISUAL to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory oraz **geometryczne logo inspirowane futurystycznym designem**.",
         "dates": "Cze 2025 - Lip 2025",
         "tags": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
         "images": [
