@@ -11,7 +11,7 @@
   },
   "about": {
     "title": "O mnie",
-    "description": "Pod koniec 2023 roku rozpoczęłam studia na kierunku Grafika komputerowa i produkcja multimedialna w [Wyższej Szkole Informatyki i Zarządzania](https://wsiz.edu.pl/). Już wcześniej pasjonowałam się malarstwem, zarówno tradycyjnym, jak i cyfrowym. Moje umiejętności zaczęły rozwijać się w szybkim tempie, a na dzień dzisiejszy jestem już doświadczonym grafikiem z ukierunkowaniem na marketing."
+    "description": "Jestem grafikiem z wieloma umiejętnościami specjalizującym się w:\n- 🎯 Tożsamości marki\n- 🎯 Ilustracji cyfrowej\n- 🎯 Materiałach marketingowych\n- 🎯 Wizualizacjach produktów\n\nŁączę kreatywność z techniczną precyzją, tworząc projekty, które są nie tylko atrakcyjne wizualnie, ale także funkcjonalne, spójne i dostosowane do celów każdej marki.\n\nDzięki doświadczeniu w zakresie DTP, grafiki rastrowej i wektorowej, digital paintingu, animacji 2D oraz UX/UI, podchodzę do projektowania z wielu perspektyw. Pozwala mi to tworzyć spójne systemy wizualne i wysokiej jakości zasoby zarówno do użytku drukowanego, jak i cyfrowego.\n\nWspółpracuję z firmami, twórcami i agencjami, które cenią sobie czystą estetykę, dbałość o szczegóły oraz szybką i niezawodną komunikację.\n\nJeśli potrzebujesz czystego, nowoczesnego i funkcjonalnego projektu, chętnie pomogę Ci zrealizować Twoje pomysły.\nWyślij mi wiadomość i stwórzmy coś, co zrobi wrażenie! 🤝\n\n✔️ Zacznijmy współpracę już dziś!"
   },
   "skills": {
     "title": "Umiejętności",
@@ -146,6 +146,11 @@
       "whatsapp": {
         "name": "Send Message",
         "url": "https://wa.me/+48733151217",
+        "navbar": true
+      },
+      "behance": {
+        "name": "View Behance",
+        "url": "https://www.behance.net/kamilasaczek",
         "navbar": true
       },
       "instagram": {

@@ -11,7 +11,7 @@
   },
   "about": {
     "title": "About",
-    "description": "At the end of 2023, I began my studies in Computer Graphics and Multimedia Production at [University of Information Technology and Management](https://wsiz.edu.pl/). I had already been passionate about painting, both traditional and digital. My skills began to develop at a rapid pace, and today I am an experienced graphic designer with a focus on marketing."
+    "description": "I'm a multidisciplinary Graphic Designer specializing in:\n- 🎯 Brand identity\n- 🎯 Digital illustration\n- 🎯 Marketing materials\n- 🎯 Product visualizations\n\nI combine creativity with technical precision- delivering designs that are not only visually appealing but also functional, consistent, and tailored to each brand's goals.\n\nWith experience across DTP, raster and vector graphics, digital painting, 2D animation, and UX/UI, I approach design from multiple angles. This allows me to create cohesive visual systems and high-quality assets for both print and digital use.\n\nI work with businesses, creators, and agencies who value clean aesthetics, attention to detail, and fast, reliable communication.\n\nIf you need clean, modern, and purposeful design- I'd love to help bring your ideas to life.\nSend me a message and let's create something impactful! 🤝\n\n✔️ Let's work together"
   },
   "skills": {
     "title": "Skills",
@@ -146,6 +146,11 @@
       "whatsapp": {
         "name": "Send Message",
         "url": "https://wa.me/+48733151217",
+        "navbar": true
+      },
+      "behance": {
+        "name": "View Behance",
+        "url": "https://www.behance.net/kamilasaczek",
         "navbar": true
       },
       "instagram": {

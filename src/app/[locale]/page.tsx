@@ -7,8 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import getDictionary from "@/dict/dict";
 import { LOCALES } from "@/lib/const";
 import { getLang } from "@/lib/utils";
+import { useMDXComponents } from "@/mdx-components";
 import Image from "next/image";
-import Markdown from "react-markdown";
+import Markdown, { Components } from "react-markdown";
 
 export const BLUR_FADE_DELAY = 0.04;
 
@@ -29,6 +30,7 @@ export default async function Page({ params }: Params) {
     education,
     projects,
   } = await getDictionary(lang);
+  const components = useMDXComponents();
   return (
     <div className="pt-12 sm:pt-24 flex flex-col gap-10">
       <section id="hero">
@@ -68,7 +70,7 @@ export default async function Page({ params }: Params) {
           <h2 className="text-xl font-bold">{about.title}</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown components={components as Components}>
             {about.description}
           </Markdown>
         </BlurFade>

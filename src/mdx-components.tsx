@@ -11,7 +11,7 @@ const components: MDXComponents = {
   p: (props) => (
     <p
       {...props}
-      className="prose max-w-full text-pretty font-sans text-sm/relaxed text-muted-foreground dark:prose-invert"
+      className="prose max-w-full text-pretty font-sans text-sm/relaxed text-muted-foreground dark:prose-invert mt-2"
     />
   ),
   ul: (props) => (
