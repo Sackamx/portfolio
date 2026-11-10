@@ -81,7 +81,7 @@ export default async function Page({
   );
 
   return (
-    <div className="pt-8 sm:pt-16 flex flex-col gap-10 mb-12">
+    <div className="mx-auto max-w-3xl px-6 pt-8 sm:pt-16 flex flex-col gap-10 mb-12">
       <section id="header" className="space-y-4">
         <div className="flex items-center justify-between gap-4 mb-10">
           <Link

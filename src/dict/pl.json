@@ -6,118 +6,309 @@
   "locationLink": "https://www.google.com/maps/place/rzeszow",
   "avatarUrl": "/me.jpg",
   "header": {
-    "title": "Cześć, Jestem Kamila",
-    "description": "Grafik komputerowy. Uwielbiam tworzyć oryginalne treści."
+    "title": "Cześć, jestem Kamila",
+    "description": "Grafik · Marketing · Social media. Projektuję kreacje, które pracują na wyniki."
   },
-  "about": {
-    "title": "O mnie",
-    "description": "Jestem grafikiem z wieloma umiejętnościami specjalizującym się w:\n- 🎯 Tożsamości marki\n- 🎯 Ilustracji cyfrowej\n- 🎯 Materiałach marketingowych\n- 🎯 Wizualizacjach produktów\n\nŁączę kreatywność z techniczną precyzją, tworząc projekty, które są nie tylko atrakcyjne wizualnie, ale także funkcjonalne, spójne i dostosowane do celów każdej marki.\n\nDzięki doświadczeniu w zakresie DTP, grafiki rastrowej i wektorowej, digital paintingu, animacji 2D oraz UX/UI, podchodzę do projektowania z wielu perspektyw. Pozwala mi to tworzyć spójne systemy wizualne i wysokiej jakości zasoby zarówno do użytku drukowanego, jak i cyfrowego.\n\nWspółpracuję z firmami, twórcami i agencjami, które cenią sobie czystą estetykę, dbałość o szczegóły oraz szybką i niezawodną komunikację.\n\nJeśli potrzebujesz czystego, nowoczesnego i funkcjonalnego projektu, chętnie pomogę Ci zrealizować Twoje pomysły.\nWyślij mi wiadomość i stwórzmy coś, co zrobi wrażenie! 🤝\n\n✔️ Zacznijmy współpracę już dziś!"
-  },
-  "skills": {
-    "title": "Umiejętności",
-    "items": [
-      "Affinity",
-      "Adobe Photoshop",
-      "Adobe Illustrator",
-      "Adobe InDesign",
-      "Adobe Lightroom",
-      "Adobe Premiere Pro",
-      "Adobe After Effects",
-      "Canva",
-      "CupCut",
-      "Figma"
-    ]
-  },
-  "services": {
-    "title": "Usługi",
-    "items": [
-      {
-        "title": "Materiały marketingowe",
-        "description": "Tworzę nowoczesne i estetyczne ulotki, plakaty, katalogi, banery, rolki oraz social media assets, dopasowane do charakteru marki i aktualnych trendów."
-      },
-      {
-        "title": "Ilustracje cyfrowe",
-        "description": "Wykonuję spersonalizowane ilustracje - od prostych ikon wektorowych po digital painting - idealne do publikacji, stron internetowych i materiałów reklamowych."
-      },
-      {
-        "title": "Projektowanie opakowań",
-        "description": "Projektuję funkcjonalne opakowania, łącząc estetykę z jasnym przekazem marki oraz wymaganiami technologicznymi produkcji."
-      },
-      {
-        "title": "Identyfikacja wizualna",
-        "description": "Kompleksowo buduję identyfikację wizualną - logo, palety kolorów, typografię i style graficzne - tworząc spójny i profesjonalny wizerunek marki."
-      },
-      {
-        "title": "DTP",
-        "description": "Przygotowuję pliki do profesjonalnego druku zgodnie ze standardami, dbając o jakość, kolory, układ i wymagania drukarni."
-      },
-      {
-        "title": "Obróbka zdjęć",
-        "description": "Zajmuję się retuszem, korekcją barw, montażem zdjęć oraz fotomanipulacją, tworząc spójne i dopracowane materiały wizualne."
-      },
-      {
-        "title": "Wizualizacje produktowe",
-        "description": "Przygotowuję realistyczne wizualizacje produktów, opakowań i komponentów w formie grafik 2D/3D, idealne do prezentacji, kampanii i e-commerce."
-      },
-      {
-        "title": "UX/UI",
-        "description": "Projektuję estetyczne interfejsy oraz układy stron internetowych i aplikacji, dbając o przejrzystość, funkcjonalność i spójny styl wizualny."
-      },
-      {
-        "title": "Moodboardy i koncepcje kreatywne",
-        "description": "Przygotowuję moodboardy, style direction oraz koncepcje wizualne, które pomagają określić kierunek projektowy dla marki lub kampanii."
-      },
-      {
-        "title": "Animacje 2D",
-        "description": "Tworzę ożywione logotypy, ilustracje i animacje ruchomej typografii, idealne do social mediów, reklam, intro/outro oraz contentu promocyjnego."
+  "home": {
+    "hero": {
+      "greeting": "👋  Cześć, jestem Kamila",
+      "firstName": "Kamila",
+      "lastName": "Saczek",
+      "tagline": "Grafik · Marketing · Social media",
+      "intro": "Projektuję kreacje, które pracują na wyniki - od kampanii Meta Ads i social mediów po identyfikację wizualną i druk.",
+      "chips": [
+        "Kampanie Meta Ads",
+        "Social media",
+        "Identyfikacja wizualna",
+        "Druk i DTP"
+      ],
+      "primaryCta": "Zobacz projekty",
+      "secondaryCta": "Napisz na WhatsApp",
+      "photoAlt": "Kamila Saczek",
+      "sticker": [
+        "design",
+        "x",
+        "marketing"
+      ]
+    },
+    "projects": {
+      "eyebrow": "Zobacz moją pracę",
+      "title": "Projekty",
+      "description": "Wybrane projekty",
+      "concept": "Koncept",
+      "cta": "Zobacz projekt →",
+      "empty": "Projekty z tej kategorii pojawią się wkrótce.",
+      "filters": {
+        "all": "Wszystkie",
+        "web": "Web",
+        "print": "Print / DTP",
+        "branding": "Branding",
+        "social": "Social media"
       }
-    ]
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "description": "Kampanie, social media i grafika - w firmie, we własnej marce i dla klientów.",
+      "items": [
+        {
+          "company": "Doin Digital",
+          "periods": [
+            "kwi 2026 - obecnie"
+          ],
+          "roles": [
+            "Współzałożycielka"
+          ],
+          "note": "Marka sprzedająca kursy online",
+          "bullets": [
+            "Budowa marki od podstaw",
+            "Ustawianie i prowadzenie kampanii Meta Ads",
+            "Tworzenie treści na social media",
+            "Automatyzacja pracy z AI"
+          ]
+        },
+        {
+          "company": "Wektor Wiedzy",
+          "periods": [
+            "mar - wrz 2026",
+            "paź 2026 - obecnie"
+          ],
+          "roles": [
+            "Grafik, Specjalistka ds. marketingu",
+            "Zewnętrzne wsparcie graficzne"
+          ],
+          "note": "oraz Akademia Kształcenia Kadr, IOB Wektor Wiedzy Wsparcie Innowacji, aizdofinansowaniem, Pozytywni CO2",
+          "bullets": [
+            "Kampanie Meta Ads i Google Ads",
+            "Grafiki do kampanii, social mediów i landingów",
+            "Aktualizacja landingów na WordPressie",
+            "Social media Akademii Kształcenia Kadr",
+            "Księgi znaku, wizytówki, vouchery, ścianki reklamowe"
+          ]
+        },
+        {
+          "company": "Freelance",
+          "periods": [
+            "od 2024"
+          ],
+          "roles": [
+            "Współpraca z klientami indywidualnymi"
+          ],
+          "note": "",
+          "bullets": [
+            "Posty na social media",
+            "Zaproszenia ślubne",
+            "Ulotki i wizytówki"
+          ]
+        }
+      ]
+    },
+    "services": {
+      "titleLines": [
+        "Co mogę",
+        "dla Ciebie zrobić"
+      ],
+      "description": "Od kampanii i social mediów po identyfikację, druk i automatyzację z AI.",
+      "items": [
+        {
+          "title": "Kampanie Meta Ads i Google Ads",
+          "description": "Ustawienie, targetowanie, testy A/B, optymalizacja i raporty."
+        },
+        {
+          "title": "Social media",
+          "description": "Prowadzenie profili, treści, karuzele i copy."
+        },
+        {
+          "title": "Wideo reklamowe i rolki",
+          "description": "Montaż pod kampanie i social media."
+        },
+        {
+          "title": "Automatyzacja z AI",
+          "description": "Skille, agenci i integracje Claude - szybsze serie kreacji, copy i raporty."
+        },
+        {
+          "title": "Materiały marketingowe",
+          "description": "Kreacje reklamowe, ulotki, plakaty, banery."
+        },
+        {
+          "title": "Identyfikacja wizualna",
+          "description": "Logo, wektoryzacja, księgi znaku, materiały firmowe."
+        },
+        {
+          "title": "Landing page, WordPress i Sanity",
+          "description": "Grafiki, aktualizacje i treści w CMS."
+        },
+        {
+          "title": "UX/UI",
+          "description": "Projekty stron w Figmie."
+        },
+        {
+          "title": "DTP",
+          "description": "Pliki do drukarni, duże formaty, ścianki i vouchery."
+        },
+        {
+          "title": "Moodboardy i koncepcje",
+          "description": "Kierunek wizualny dla marki lub kampanii."
+        }
+      ]
+    },
+    "about": {
+      "title": "O mnie",
+      "educationLabel": "EDUKACJA",
+      "education": [
+        {
+          "school": "Uniwersytet w Białymstoku",
+          "details": "Zarządzanie  ·  2026 - obecnie"
+        },
+        {
+          "school": "Wyższa Szkoła Informatyki i Zarządzania",
+          "details": "Grafika komputerowa i produkcja multimedialna\n2023 - 2026  ·  Licencjat"
+        }
+      ],
+      "headline": "Design, który pracuje na wyniki.",
+      "paragraphs": [
+        "Jestem grafikiem, który zna marketing od środka. Sama ustawiam i optymalizuję kampanie Meta Ads, prowadzę social media i jako współzałożycielka marki Doin Digital widzę, które kreacje naprawdę działają. Dzięki temu projektuję z myślą o wyniku, a nie tylko o wyglądzie.",
+        "W pracy wykorzystuję AI, żeby automatyzować powtarzalne zadania i dostarczać więcej, szybciej. Jestem samodzielna, dobrze zorganizowana i konkretna w komunikacji, a nowe narzędzia testuję z ciekawością. Chcę dalej rozwijać się w marketingu, łącząc design z danymi."
+      ],
+      "tools": [
+        {
+          "title": "Design",
+          "style": "filled",
+          "items": [
+            "Figma",
+            "Photoshop",
+            "Illustrator",
+            "InDesign",
+            "Lightroom",
+            "Premiere Pro",
+            "After Effects",
+            "Affinity",
+            "CapCut"
+          ]
+        },
+        {
+          "title": "Marketing i web",
+          "style": "outline",
+          "items": [
+            "Meta Ads Manager",
+            "Business Suite",
+            "Google Ads",
+            "GA4",
+            "Search Console",
+            "WordPress",
+            "Sanity",
+            "VS Code (podstawy)"
+          ]
+        },
+        {
+          "title": "AI - narzędzia i zastosowania",
+          "style": "accent",
+          "items": [
+            "Claude",
+            "Claude Code (podstawy)"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "titleLines": [
+        "Stwórzmy coś,",
+        "co zrobi wrażenie 🤝"
+      ],
+      "description": "Chcesz porozmawiać? Napisz - odpowiem tak szybko, jak to możliwe.",
+      "cards": [
+        {
+          "label": "WHATSAPP",
+          "value": "+48 733 151 217",
+          "href": "https://wa.me/+48733151217"
+        },
+        {
+          "label": "E-MAIL",
+          "value": "kamilasaczek04@gmail.com",
+          "href": "mailto:kamilasaczek04@gmail.com"
+        },
+        {
+          "label": "BEHANCE",
+          "value": "behance.net/kamilasaczek",
+          "href": "https://www.behance.net/kamilasaczek"
+        }
+      ]
+    },
+    "footer": {
+      "copyright": "© 2026 Kamila Saczek",
+      "tagline": "Grafik · Marketing · Social media"
+    }
   },
   "projects": {
     "back": "Powrót do strony głównej",
-    "badge": "Projekty",
-    "title": "Zobacz moją pracę",
-    "description": "Pracowałam nad różnymi projektami - od prostych mockupów po zaawansowane layouty. Oto kilka najlepszych:",
     "items": {
       "fuoco-nero": {
         "title": "Strony internetowa marki kawy - Fuoco Nero",
         "description": "Fuoco Nero to ekskluzywna marka kawy premium skierowana do koneserów. Jej identyfikacja wizualna opiera się na **ciemnej, eleganckiej stylistyce**, mocnych kontrastach oraz wysmakowanych detalach, które podkreślają luksusowy charakter produktu.",
         "dates": "Lis 2025 - Gru 2025",
-        "tags": ["Adobe Photoshop"],
+        "tags": [
+          "Adobe Photoshop"
+        ],
         "images": [
           "/projects/fuoco-nero/MacBook_Mockup_1.jpg",
           "/projects/fuoco-nero/MacBook_Mockup_2.jpg",
           "/projects/fuoco-nero/MacBook_Mockup_3.jpg",
           "/projects/fuoco-nero/webmockup.jpg"
-        ]
+        ],
+        "name": "Fuoco Nero",
+        "category": "web",
+        "kind": "Strona internetowa marki kawy",
+        "period": "Lis - Gru 2025",
+        "short": "Kawa premium dla koneserów - ciemna, elegancka stylistyka i mocne kontrasty."
       },
       "vasabi": {
         "title": "Menu Restauracji - Vasabi",
         "description": "Projekt menu restauracji Vasabi łączy **nowoczesny minimalizm** z **tradycyjną estetyką japońską**. Celem było stworzenie identyfikacji wizualnej, która jest jednocześnie **elegancka i autentyczna**, odzwierciedlając połączenie kuchni japońskiej i azjatyckiej.",
         "dates": "Lut 2024 - Mar 2024",
-        "tags": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
+        "tags": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign"
+        ],
         "images": [
           "/projects/vasabi/mockup1.jpg",
           "/projects/vasabi/mockup2.jpg",
           "/projects/vasabi/menu.jpg",
           "/projects/vasabi/menu2.jpg"
-        ]
+        ],
+        "name": "Vasabi",
+        "category": "print",
+        "kind": "Menu restauracji",
+        "period": "Lut - Mar 2024",
+        "short": "Nowoczesny minimalizm połączony z tradycyjną estetyką japońską."
       },
       "core-motion-physiotherapy": {
         "title": "Broszura - Coremotion Physiotherapy",
         "description": "Ulotka **Coremotion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki - _„Życie bez bólu”_ - oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
         "dates": "Sie 2024 - Wrz 2024",
-        "tags": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
+        "tags": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign"
+        ],
         "images": [
           "/projects/core-motion-physiotherapy/mockup2.jpg",
           "/projects/core-motion-physiotherapy/mockup3.jpg"
-        ]
+        ],
+        "name": "Coremotion Physiotherapy",
+        "category": "print",
+        "kind": "Broszura",
+        "period": "Sie - Wrz 2024",
+        "short": "Broszura kliniki z hasłem „Życie bez bólu” - przejrzyście o usługach."
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna - Kvisual",
         "description": "Kvisual to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory oraz **geometryczne logo inspirowane futurystycznym designem**.",
         "dates": "Cze 2025 - Lip 2025",
-        "tags": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "tags": [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Figma"
+        ],
         "images": [
           "/projects/kvisual/kvisual-cards.jpg",
           "/projects/kvisual/kvisualbrand-10.jpg",
@@ -125,23 +316,25 @@
           "/projects/kvisual/kvisualbrand-05.jpg",
           "/projects/kvisual/kvisualbrand-03.jpg",
           "/projects/kvisual/kvisualbrand--0.png"
-        ]
+        ],
+        "name": "Kvisual",
+        "category": "branding",
+        "kind": "Identyfikacja wizualna",
+        "period": "Cze - Lip 2025",
+        "short": "Studio graficzne - prostota, ekspresja i geometryczne, futurystyczne logo."
       }
-    },
-    "in-progress": {
-      "title": "",
-      "description": "",
-      "dates": "Gru 2025 - Teraz",
-      "tags": []
     }
   },
-  "navbar": [{ "href": "/", "name": "home", "label": "Home" }],
+  "navbar": [
+    {
+      "href": "/",
+      "name": "home",
+      "label": "Home"
+    }
+  ],
   "contact": {
     "email": "kamilasaczek04@gmail.com",
     "tel": "+48733151217",
-    "badge": "Kontakt",
-    "title": "Skontaktuj się",
-    "description": "Chcesz porozmawiać? Wyślij mi [prywatną wiadomość na Whatsapp](https://wa.me/+48733151217), a ja postaram się odpowiedzieć tak szybko jak to możliwe.",
     "social": {
       "whatsapp": {
         "name": "Send Message",
@@ -155,7 +348,7 @@
       },
       "instagram": {
         "name": "View Profile",
-        "url": "https://www.instagram.com/kvisual_studio",
+        "url": "https://www.instagram.com/doin.digital/",
         "navbar": true
       },
       "email": {
@@ -164,18 +357,5 @@
         "navbar": true
       }
     }
-  },
-  "education": {
-    "title": "Edukacja",
-    "items": [
-      {
-        "school": "Wyższa Szkoła Informatyki i Zarządzania",
-        "href": "https://wsiz.edu.pl/",
-        "degree": "Licencjat",
-        "logoUrl": "/education/wsiz.png",
-        "start": "2023",
-        "end": "Obecnie"
-      }
-    ]
   }
 }
