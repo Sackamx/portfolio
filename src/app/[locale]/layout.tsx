@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import { DM_Sans as FontSans } from "next/font/google";
 import "../globals.css";
 import getDictionary from "@/dict/dict";
-import Contact from "@/components/home/contact";
 import Footer from "@/components/home/footer";
 import { LOCALES } from "@/lib/const";
 
@@ -84,7 +83,6 @@ export default async function RootLayout({
           <TooltipProvider delayDuration={0}>
             <main className="min-h-[100dvh] overflow-x-clip pb-24">
               {children}
-              <Contact contact={dict.home.contact} />
               <Footer footer={dict.home.footer} />
             </main>
             <Navbar dict={dict} />

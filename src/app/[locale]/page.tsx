@@ -1,4 +1,5 @@
 import About from "@/components/home/about";
+import Contact from "@/components/home/contact";
 import Experience from "@/components/home/experience";
 import Hero from "@/components/home/hero";
 import Projects from "@/components/home/projects";
@@ -22,6 +23,7 @@ export default async function Page({ params }: Params) {
       <Experience experience={home.experience} />
       <Services services={home.services} />
       <About about={home.about} />
+      <Contact contact={home.contact} />
     </>
   );
 }

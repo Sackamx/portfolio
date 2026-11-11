@@ -239,10 +239,22 @@
     }
   },
   "projects": {
-    "back": "Powrót do strony głównej",
+    "labels": {
+      "back": "Wszystkie projekty",
+      "concept": "Koncept",
+      "kind": "Rodzaj",
+      "dates": "Daty",
+      "category": "Kategoria",
+      "tools": "Narzędzia",
+      "prev": "Poprzednie zdjęcie",
+      "next": "Następne zdjęcie",
+      "open": "Powiększ zdjęcie",
+      "close": "Zamknij"
+    },
     "items": {
       "fuoco-nero": {
         "title": "Strony internetowa marki kawy - Fuoco Nero",
+        "headline": "Strona internetowa marki kawy premium",
         "description": "Fuoco Nero to ekskluzywna marka kawy premium skierowana do koneserów. Jej identyfikacja wizualna opiera się na **ciemnej, eleganckiej stylistyce**, mocnych kontrastach oraz wysmakowanych detalach, które podkreślają luksusowy charakter produktu.",
         "dates": "Lis 2025 - Gru 2025",
         "tags": [
@@ -262,6 +274,7 @@
       },
       "vasabi": {
         "title": "Menu Restauracji - Vasabi",
+        "headline": "Menu restauracji japońsko-azjatyckiej",
         "description": "Projekt menu restauracji Vasabi łączy **nowoczesny minimalizm** z **tradycyjną estetyką japońską**. Celem było stworzenie identyfikacji wizualnej, która jest jednocześnie **elegancka i autentyczna**, odzwierciedlając połączenie kuchni japońskiej i azjatyckiej.",
         "dates": "Lut 2024 - Mar 2024",
         "tags": [
@@ -283,6 +296,7 @@
       },
       "core-motion-physiotherapy": {
         "title": "Broszura - Coremotion Physiotherapy",
+        "headline": "Broszura kliniki fizjoterapii",
         "description": "Ulotka **Coremotion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki - _„Życie bez bólu”_ - oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
         "dates": "Sie 2024 - Wrz 2024",
         "tags": [
@@ -302,6 +316,7 @@
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna - Kvisual",
+        "headline": "Identyfikacja wizualna studia graficznego",
         "description": "Kvisual to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory oraz **geometryczne logo inspirowane futurystycznym designem**.",
         "dates": "Cze 2025 - Lip 2025",
         "tags": [

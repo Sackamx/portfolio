@@ -239,10 +239,22 @@
     }
   },
   "projects": {
-    "back": "Back to home",
+    "labels": {
+      "back": "All projects",
+      "concept": "Concept",
+      "kind": "Type",
+      "dates": "Dates",
+      "category": "Category",
+      "tools": "Tools",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "open": "Enlarge photo",
+      "close": "Close"
+    },
     "items": {
       "fuoco-nero": {
         "title": "Fuoco Nero - Premium Coffee Brand Website",
+        "headline": "Website for a premium coffee brand",
         "description": "Fuoco Nero is an exclusive premium coffee brand created for true connoisseurs. Its visual identity is built on a **dark, elegant aesthetic**, strong contrasts, and refined details that emphasize the luxurious character of the product - from packaging to the digital experience.",
         "dates": "Nov 2025 - Dec 2025",
         "tags": [
@@ -262,6 +274,7 @@
       },
       "vasabi": {
         "title": "Vasabi - Restaurant Menu",
+        "headline": "Japanese-Asian restaurant menu",
         "description": "Vasabi restaurant menu design combines **modern minimalism** with **traditional Japanese aesthetics**. The goal was to create a visual identity that feels both **elegant and authentic**, reflecting the fusion of Japanese and Asian cuisine.",
         "dates": "Feb 2024 - Mar 2024",
         "tags": [
@@ -283,6 +296,7 @@
       },
       "core-motion-physiotherapy": {
         "title": "Coremotion Physiotherapy - Brochure",
+        "headline": "Physiotherapy clinic brochure",
         "description": "The **Coremotion Physiotherapy** brochure was designed to communicate the clinic’s mission of _“Pain-Free Living”_ while providing essential information about their physiotherapy services in a clear and approachable way. The tri-fold format ensures a professional and practical layout, perfect for distribution in clinics, community centers, and wellness events.",
         "dates": "Aug 2024 - Sep 2024",
         "tags": [
@@ -302,6 +316,7 @@
       },
       "kvisual": {
         "title": "Branding / Visual identity design - Kvisual",
+        "headline": "Visual identity for a design studio",
         "description": "Kvisual is a **modern graphic design studio** specializing in visual identity design, advertising materials, and promotional campaigns. The brand combines **simplicity with expressiveness**, using clean lines, contrasting colors (black, white, and creative purple #6020B8), and a **geometric, futuristic-inspired logo**.",
         "dates": "Jun 2025 - Jul 2025",
         "tags": [
