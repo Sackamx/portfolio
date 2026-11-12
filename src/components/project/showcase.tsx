@@ -16,7 +16,9 @@ export type ShowcaseSection =
   /** An untitled full-width stage, like a second key visual. */
   | ({ type: "visual" } & Picture)
   /** Grey panel of labelled rows; each row is one exported strip of creatives. */
-  | { type: "gallery"; title: string; aside?: string; groups: (Picture & { label: string })[] };
+  | { type: "gallery"; title: string; aside?: string; groups: (Picture & { label: string })[] }
+  /** Playable reels in phone mock-ups (Figma "Mockup/Telefon - Rolka"). */
+  | { type: "reels"; title: string; aside?: string; label: string; videos: { src: string; poster: string }[] };
 
 export type Showcase = { keyVisual?: Picture; sections: ShowcaseSection[] };
 
@@ -115,6 +117,38 @@ export default function ShowcaseSections({ slug, showcase, name }: Props) {
             <section key={section.image} className={SECTION}>
               <Header title={section.title} aside={section.aside} />
               <Panel picture={section} alt={`${name} - ${section.title}`} />
+            </section>
+          );
+        }
+
+        if (section.type === "reels") {
+          return (
+            <section key={`${index}-${section.title}`} className={SECTION}>
+              <Header title={section.title} aside={section.aside} />
+              {/* Figma stage: 1280 wide, phones 272 × 465 at x 82 / 504 / 926 with a 13 px bezel. */}
+              <div className="rounded-2xl bg-[#e3e0e2] px-[6.4%] pb-[4.9%] pt-[5%]">
+                <p className="text-[13px] font-medium leading-snug text-muted-ink md:text-sm">
+                  {section.label}
+                </p>
+                <div className="mt-[2.5%] flex justify-between">
+                  {section.videos.map((video) => (
+                    <div
+                      key={video.src}
+                      className="w-[24.3%] rounded-[14.2%/8.3%] bg-[#1d1720] p-[1.16%] shadow-[0_12px_32px_rgba(28,23,33,0.18)]"
+                    >
+                      <video
+                        src={video.src}
+                        poster={video.poster}
+                        controls
+                        playsInline
+                        preload="none"
+                        aria-label={`${name} - ${section.title}`}
+                        className="block aspect-[246/439] w-full rounded-[11.5%/6.5%] bg-[#5711c2] object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </section>
           );
         }

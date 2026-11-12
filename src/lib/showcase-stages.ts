@@ -1,7 +1,6 @@
 import type { Device, Stage } from "@/components/project/device-stage";
 
 /** Geometry measured from the Figma "Projekt/Homely" and "Projekt/Fuoco Nero" frames (px). */
-const PLUM = "#561d5c";
 const GREY = "#e3e0e2";
 
 type Size = Device["screenSize"];
@@ -50,7 +49,7 @@ export const SHOWCASE_STAGES: Record<string, ProjectStages> = {
     keyVisual: {
       w: 1280,
       h: 800,
-      bg: PLUM,
+      bg: GREY,
       devices: [
         browser("homely", "desktop", "homely.com", { x: 96, y: 72, w: 920, h: 508 }, { w: 1840, h: 6499 }),
         handheld("homely", "phone", { x: 914, y: 205, w: 270, h: 561 }, 40, 10, 30, { w: 500, h: 5481 }),
@@ -77,7 +76,7 @@ export const SHOWCASE_STAGES: Record<string, ProjectStages> = {
     keyVisual: {
       w: 1280,
       h: 800,
-      bg: PLUM,
+      bg: GREY,
       devices: [
         browser("fuoco-nero", "desktop", "fuoconero.com", { x: 96, y: 72, w: 920, h: 589 }, { w: 1840, h: 4814 }),
         handheld("fuoco-nero", "phone", { x: 914, y: 200, w: 270, h: 536 }, 40, 10, 30, { w: 500, h: 4898 }),

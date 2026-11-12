@@ -980,15 +980,22 @@
           },
           "sections": [
             {
-              "type": "gallery",
+              "type": "reels",
               "title": "Reels",
               "aside": "Recorded and published by me",
-              "groups": [
+              "label": "9:16 reels  ·  recording, on-camera presenting and publishing",
+              "videos": [
                 {
-                  "label": "9:16 reels  ·  recording, on-camera presenting and publishing",
-                  "image": "/projects/doin-digital/rolki-1.jpg",
-                  "w": 2560,
-                  "h": 1001
+                  "src": "/projects/doin-digital/reels/ai-nie-zastapi-ludzi-kod-BF.mp4",
+                  "poster": "/projects/doin-digital/reels/ai-nie-zastapi-ludzi-kod-BF.jpg"
+                },
+                {
+                  "src": "/projects/doin-digital/reels/ai-w-figmie.mp4",
+                  "poster": "/projects/doin-digital/reels/ai-w-figmie.jpg"
+                },
+                {
+                  "src": "/projects/doin-digital/reels/godzinami-szukasz-inspiracji-kod-BF.mp4",
+                  "poster": "/projects/doin-digital/reels/godzinami-szukasz-inspiracji-kod-BF.jpg"
                 }
               ]
             },

@@ -980,15 +980,22 @@
           },
           "sections": [
             {
-              "type": "gallery",
+              "type": "reels",
               "title": "Rolki",
               "aside": "Nagrywane i publikowane przeze mnie",
-              "groups": [
+              "label": "Rolki 9:16  ·  nagranie, występ przed kamerą i publikacja",
+              "videos": [
                 {
-                  "label": "Rolki 9:16  ·  nagranie, występ przed kamerą i publikacja",
-                  "image": "/projects/doin-digital/rolki-1.jpg",
-                  "w": 2560,
-                  "h": 1001
+                  "src": "/projects/doin-digital/reels/ai-nie-zastapi-ludzi-kod-BF.mp4",
+                  "poster": "/projects/doin-digital/reels/ai-nie-zastapi-ludzi-kod-BF.jpg"
+                },
+                {
+                  "src": "/projects/doin-digital/reels/ai-w-figmie.mp4",
+                  "poster": "/projects/doin-digital/reels/ai-w-figmie.jpg"
+                },
+                {
+                  "src": "/projects/doin-digital/reels/godzinami-szukasz-inspiracji-kod-BF.mp4",
+                  "poster": "/projects/doin-digital/reels/godzinami-szukasz-inspiracji-kod-BF.jpg"
                 }
               ]
             },
