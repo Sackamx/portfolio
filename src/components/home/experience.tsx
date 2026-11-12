@@ -43,7 +43,7 @@ export default function Experience({ experience }: Props) {
               <ul className="flex flex-col gap-2.5 text-[17px] leading-[1.4] text-ink md:col-start-2 xl:col-start-auto">
                 {job.bullets.map((bullet) => (
                   <li key={bullet} className="flex gap-3">
-                    <span aria-hidden="true">—</span>
+                    <span aria-hidden="true">-</span>
                     <span>{bullet}</span>
                   </li>
                 ))}

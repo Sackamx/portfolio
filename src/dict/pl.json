@@ -34,16 +34,23 @@
     "projects": {
       "eyebrow": "Zobacz moją pracę",
       "title": "Projekty",
-      "description": "Wybrane projekty",
+      "description": "",
       "concept": "Koncept",
       "cta": "Zobacz projekt →",
       "empty": "Projekty z tej kategorii pojawią się wkrótce.",
       "filters": {
-        "all": "Wszystkie",
+        "featured": "Wybrane",
         "web": "Web",
         "print": "Print / DTP",
         "branding": "Branding",
         "social": "Social media"
+      },
+      "commercial": "Projekt komercyjny",
+      "team": "Projekt zespołowy",
+      "clients": {
+        "wektor-wiedzy": "Wektor Wiedzy",
+        "akk": "AKK",
+        "doin-digital": "Doin Digital"
       }
     },
     "experience": {
@@ -53,7 +60,7 @@
         {
           "company": "Doin Digital",
           "periods": [
-            "kwi 2026 - obecnie"
+            "Kwi 2026 - obecnie"
           ],
           "roles": [
             "Współzałożycielka"
@@ -69,14 +76,14 @@
         {
           "company": "Wektor Wiedzy",
           "periods": [
-            "mar - wrz 2026",
-            "paź 2026 - obecnie"
+            "Mar - Wrz 2026",
+            "Paź 2026 - obecnie"
           ],
           "roles": [
-            "Grafik, Specjalistka ds. marketingu",
+            "Specjalistka ds. marketingu (głównie grafika)",
             "Zewnętrzne wsparcie graficzne"
           ],
-          "note": "oraz Akademia Kształcenia Kadr, IOB Wektor Wiedzy Wsparcie Innowacji, aizdofinansowaniem, Pozytywni CO2",
+          "note": "Marki powiązane: Akademia Kształcenia Kadr, IOB Wektor Wiedzy Wsparcie Innowacji, aizdofinansowaniem, Pozytywni CO2",
           "bullets": [
             "Kampanie Meta Ads i Google Ads",
             "Grafiki do kampanii, social mediów i landingów",
@@ -88,7 +95,7 @@
         {
           "company": "Freelance",
           "periods": [
-            "od 2024"
+            "Od 2024"
           ],
           "roles": [
             "Współpraca z klientami indywidualnymi"
@@ -250,7 +257,9 @@
       "next": "Następne zdjęcie",
       "open": "Powiększ zdjęcie",
       "close": "Zamknij",
-      "palette": "Paleta kolorów"
+      "palette": "Paleta kolorów",
+      "commercial": "Projekt komercyjny",
+      "team": "Projekt zespołowy"
     },
     "items": {
       "fuoco-nero": {
@@ -403,7 +412,8 @@
             "name": "Mgła",
             "hex": "#EFF1F1"
           }
-        ]
+        ],
+        "featured": true
       },
       "vasabi": {
         "title": "Menu Restauracji - Vasabi",
@@ -523,7 +533,8 @@
             "name": "Biały",
             "hex": "#FFFFFF"
           }
-        ]
+        ],
+        "featured": true
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna - Kvisual",
@@ -683,6 +694,895 @@
           {
             "name": "Modern Gold",
             "hex": "#EF9F27"
+          }
+        ],
+        "featured": true
+      },
+      "wektor-wiedzy-kampanie": {
+        "title": "Kampanie reklamowe Meta Ads i Google Ads - Wektor Wiedzy",
+        "headline": "Kampanie reklamowe Meta Ads i Google Ads",
+        "description": "Kreacje do kampanii Meta Ads i Google Ads dla Wektora Wiedzy - firmy szkoleniowej dla księgowych i kadrowych: webinary, kursy z dofinansowaniem, akcje okolicznościowe i sprzedażowe. Każda kampania to spójny zestaw formatów, od stories 9:16, przez posty 1:1 i 4:5, po banery 1.91:1. Poniżej wybrane kampanie - **to tylko część grafik, które przygotowałam.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-kampanie/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "social",
+        "kind": "Kampanie reklamowe",
+        "period": "2026",
+        "short": "Kreacje do kampanii Meta Ads i Google Ads dla firmy szkoleniowej - webinary, kursy i akcje sprzedażowe.",
+        "cover": "/projects/wektor-wiedzy-kampanie/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "featured": true,
+        "heroTags": [
+          "Kampanie",
+          "Social media"
+        ],
+        "metaKind": "Kreacje reklamowe",
+        "categoryLabel": "Kampanie · Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-kampanie/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Kampanie na webinary i wydarzenia",
+              "groups": [
+                {
+                  "label": "Bezpłatny webinar o AI w kadrach  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "„Sztuczna inteligencja a RODO”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Seria webinarów z ekspertami  ·  ten sam układ, inny temat i prowadzący",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Cykle „Kadrowe wtorki” i „Podatkowe czwartki”  ·  jeden szablon, różni eksperci, 1:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-4.jpg",
+                  "w": 2560,
+                  "h": 416
+                },
+                {
+                  "label": "Kursy z dofinansowaniem do 90%  ·  dwa kierunki kreacji: korzyść i wypoczynek",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-5.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Kursy angielskiego - drugi kierunek: „Swobodna rekrutacja po angielsku”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-6.jpg",
+                  "w": 2560,
+                  "h": 672
+                }
+              ]
+            },
+            {
+              "type": "visual",
+              "image": "/projects/wektor-wiedzy-kampanie/key-visual-google-ads.jpg",
+              "w": 2560,
+              "h": 1600
+            },
+            {
+              "type": "gallery",
+              "title": "Google Ads",
+              "aside": "Performance Max i kampanie sprzedażowe",
+              "groups": [
+                {
+                  "label": "Black Weeks - rabaty do −50% z kodem BLACK26  ·  1.91:1 · 1:1 · 9:16",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-1.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Prezent 500 zł na Dzień Kadrowego i Dzień Księgowego  ·  3 warianty kreacji, 1:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Kurs angielskiego dla biznesu  ·  5 wariantów kreacji do testów",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-3.jpg",
+                  "w": 2560,
+                  "h": 494
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Niebieski",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Granat",
+            "hex": "#002066"
+          },
+          {
+            "name": "Jasny niebieski",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Błękit tła",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "akk-kampanie": {
+        "title": "Kampanie reklamowe Meta Ads i Google Ads - Akademia Kształcenia Kadr",
+        "headline": "Kampanie reklamowe Meta Ads i Google Ads",
+        "description": "Kreacje do kampanii Meta Ads i Google Ads dla Akademii Kształcenia Kadr - firmy szkoleniowej dla księgowych i kadrowych: kursy wyjazdowe i kursy księgowe z dofinansowaniem, szkolenia dla firm i akcje okolicznościowe. Każda kampania to spójny zestaw formatów i kilka kierunków komunikatu do testów. Poniżej wybrane kampanie - **to tylko część grafik, które przygotowałam.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-kampanie/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "social",
+        "kind": "Kampanie reklamowe",
+        "period": "2026",
+        "short": "Reklamy Meta Ads i Google Ads Akademii Kształcenia Kadr - kursy z dofinansowaniem i szkolenia dla firm.",
+        "cover": "/projects/akk-kampanie/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "featured": true,
+        "heroTags": [
+          "Kampanie",
+          "Social media"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Kreacje reklamowe",
+        "categoryLabel": "Kampanie · Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-kampanie/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Kursy wyjazdowe, szkolenia dla firm i akcje okolicznościowe",
+              "groups": [
+                {
+                  "label": "Kursy wyjazdowe z dofinansowaniem do 90%  ·  5 kierunków kreacji w stories 9:16",
+                  "image": "/projects/akk-kampanie/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 822
+                },
+                {
+                  "label": "Te same kierunki w feedzie  ·  1:1",
+                  "image": "/projects/akk-kampanie/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Szkolenia dla firm  ·  6 haseł jednej kampanii, 4:5",
+                  "image": "/projects/akk-kampanie/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "„Czy chcesz szkolić zespół?”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/akk-kampanie/meta-ads-4.jpg",
+                  "w": 2560,
+                  "h": 572
+                },
+                {
+                  "label": "Kursy zaawansowane: Księgowość i podatki w praktyce, Akademia Rachunkowości, Platforma VAT  ·  4:5 i 9:16",
+                  "image": "/projects/akk-kampanie/meta-ads-5.jpg",
+                  "w": 2560,
+                  "h": 612
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Google Ads",
+              "aside": "Performance Max",
+              "groups": [
+                {
+                  "label": "Performance Max - kursy księgowe z dofinansowaniem od 5 000 do 15 000 zł  ·  4:5 · 1:1 · 1.91:1",
+                  "image": "/projects/akk-kampanie/google-ads-1.jpg",
+                  "w": 2560,
+                  "h": 662
+                },
+                {
+                  "label": "Kolejne kierunki komunikatu: dofinansowanie do 90% i pomoc we wniosku do PUP  ·  4:5 i 1.91:1",
+                  "image": "/projects/akk-kampanie/google-ads-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Czerń",
+            "hex": "#122231"
+          },
+          {
+            "name": "Szary",
+            "hex": "#676767"
+          },
+          {
+            "name": "Jasny pomarańcz",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Tło",
+            "hex": "#FFF0EB"
+          }
+        ]
+      },
+      "doin-digital": {
+        "title": "Rolki, posty i reklamy - Doin Digital",
+        "headline": "Rolki, posty i reklamy kursów online",
+        "description": "Doin Digital to marka kursów online, którą współtworzę. Treści powstawały zespołowo i w dużej mierze z pomocą AI - na bazie skilla, w którym zapisaliśmy zasady marki. **Ja nagrywałam i publikowałam rolki, wdrażałam poprawki w projektach i dopracowywałam teksty.** Poniżej wybrane projekty.",
+        "dates": "2026",
+        "tags": [
+          "Claude",
+          "Figma"
+        ],
+        "images": [
+          "/projects/doin-digital/cover.jpg"
+        ],
+        "name": "Doin Digital",
+        "category": "social",
+        "kind": "Rolki, posty i reklamy",
+        "period": "2026",
+        "short": "Marka kursów online: moje rolki, poprawki projektów i copywriting w zespołowej pracy z AI.",
+        "cover": "/projects/doin-digital/cover.jpg",
+        "client": "doin-digital",
+        "badge": "team",
+        "featured": true,
+        "heroTags": [
+          "Social media",
+          "Kampanie"
+        ],
+        "metaKind": "Rolki · Posty · Meta Ads",
+        "categoryLabel": "Social media · Kampanie",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/doin-digital/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Rolki",
+              "aside": "Nagrywane i publikowane przeze mnie",
+              "groups": [
+                {
+                  "label": "Rolki 9:16  ·  nagranie, występ przed kamerą i publikacja",
+                  "image": "/projects/doin-digital/rolki-1.jpg",
+                  "w": 2560,
+                  "h": 1001
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Posty i karuzele",
+              "aside": "Edukacja, sprzedaż kursów i seria kolaży",
+              "groups": [
+                {
+                  "label": "Karuzela „4 kroki do sukcesu Twojego kursu”  ·  okładka i kolejne slajdy",
+                  "image": "/projects/doin-digital/posty-1.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Karuzela „5 błędów, przez które Twój landing nie sprzedaje”  ·  okładka, 5 błędów i CTA",
+                  "image": "/projects/doin-digital/posty-2.jpg",
+                  "w": 2560,
+                  "h": 432
+                },
+                {
+                  "label": "Karuzela „Rozmowa z klientem”  ·  hook, obiekcje i CTA",
+                  "image": "/projects/doin-digital/posty-3.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Szablony postów: paragon, ankieta, wycinek, karta pokładowa, ostrzeżenie, przed / po",
+                  "image": "/projects/doin-digital/posty-4.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Pojedyncze posty",
+                  "image": "/projects/doin-digital/posty-5.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Seria kolaży",
+                  "image": "/projects/doin-digital/posty-6.jpg",
+                  "w": 2560,
+                  "h": 763
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Reklamy kursów i strony sprzedażowej",
+              "groups": [
+                {
+                  "label": "Strona sprzedażowa - zestaw A, stała promocja  ·  1:1",
+                  "image": "/projects/doin-digital/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Zestaw B z kodem STRONA50 (−50%)  ·  9:16",
+                  "image": "/projects/doin-digital/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 792
+                },
+                {
+                  "label": "Kurs „AI + Figma”  ·  10 kierunków kreacji, 6 z nich w 1:1",
+                  "image": "/projects/doin-digital/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 416
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Fiolet",
+            "hex": "#5711C2"
+          },
+          {
+            "name": "Ciemny fiolet",
+            "hex": "#23074E"
+          },
+          {
+            "name": "Limonka",
+            "hex": "#A3F36A"
+          },
+          {
+            "name": "Róż",
+            "hex": "#FF96C7"
+          },
+          {
+            "name": "Pomarańcz",
+            "hex": "#F77308"
+          }
+        ]
+      },
+      "wektor-wiedzy-social-media": {
+        "title": "Social media, e-mail i strona www - Wektor Wiedzy",
+        "headline": "Social media, e-mail i strona www",
+        "description": "Szablony postów organicznych, stopki mailowe i banery na stronę dla Wektora Wiedzy - firmy szkoleniowej dla księgowych i kadrowych. Powtarzalne komunikaty, takie jak webinary, szkolenia i harmonogramy, mają stały układ, dzięki czemu kolejne grafiki powstają szybko i wyglądają spójnie. Poniżej wybrane projekty - **to tylko część grafik, które przygotowałam.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-social-media/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "social",
+        "kind": "Social media i komunikacja",
+        "period": "2026",
+        "short": "Szablony postów, stopki mailowe i banery na stronę - spójna komunikacja firmy szkoleniowej.",
+        "cover": "/projects/wektor-wiedzy-social-media/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Social media"
+        ],
+        "metaKind": "Social media · E-mail · WWW",
+        "categoryLabel": "Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-social-media/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Social media organiczne",
+              "aside": "Webinary, szkolenia, harmonogramy i blog",
+              "groups": [
+                {
+                  "label": "Bezpłatne webinary  ·  wersje jasne i ciemne jednego szablonu",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-1.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Szkolenia i kursy",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Harmonogramy webinarów",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-3.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Posty eksperckie i wpisy z bloga",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-4.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Wydarzenia, szkolenia i harmonogramy  ·  4:5",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-5.jpg",
+                  "w": 2560,
+                  "h": 746
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "E-mail i strona www",
+              "aside": "Stopki mailowe i banery",
+              "groups": [
+                {
+                  "label": "„Wrzesień pełen wiedzy”  ·  baner www 1920 × 800 i post 4:5",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-1.jpg",
+                  "w": 2560,
+                  "h": 542
+                },
+                {
+                  "label": "Konferencja podatkowa  ·  baner i wersja pionowa",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Stopki mailowe",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-3.jpg",
+                  "w": 2560,
+                  "h": 1130
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Niebieski",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Granat",
+            "hex": "#002066"
+          },
+          {
+            "name": "Jasny niebieski",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Błękit tła",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "wektor-wiedzy-druk": {
+        "title": "Bony podarunkowe i ścianka reklamowa - Wektor Wiedzy",
+        "headline": "Bony podarunkowe i ścianka reklamowa",
+        "description": "Bony o wartości 1000 zł i ścianka reklamowa do zdjęć dla Wektora Wiedzy, zaprojektowane w Illustratorze i wydrukowane. Materiały towarzyszyły **szkoleniom wyjazdowym** firmy, m.in. w Kołobrzegu i Krynicy-Zdroju.",
+        "dates": "2026",
+        "tags": [
+          "Adobe Illustrator"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-druk/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "print",
+        "kind": "Bony i ścianka reklamowa",
+        "period": "2026",
+        "short": "Bony podarunkowe 1000 zł i ścianka do zdjęć - wydrukowane i użyte na szkoleniach wyjazdowych.",
+        "cover": "/projects/wektor-wiedzy-druk/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Print / DTP"
+        ],
+        "metaKind": "Druk · Bony · Ścianka",
+        "categoryLabel": "Print / DTP",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-druk/key-visual.jpg",
+            "w": 2560,
+            "h": 1524
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Vouchery",
+              "items": [
+                {
+                  "image": "/projects/wektor-wiedzy-druk/bony-1.jpg",
+                  "w": 1598,
+                  "h": 820,
+                  "title": "Bon na kurs „Pełne delegowanie”",
+                  "caption": "Wersja z fotografią z sali szkoleniowej"
+                },
+                {
+                  "image": "/projects/wektor-wiedzy-druk/bony-2.jpg",
+                  "w": 616,
+                  "h": 820,
+                  "title": "Bon w rękach uczestnika",
+                  "caption": "Ten sam projekt po wydruku, na szkoleniu"
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Na szkoleniach",
+              "aside": "Ścianka do zdjęć i bony w relacjach Wektora Wiedzy",
+              "groups": [
+                {
+                  "label": "Relacje z Instagrama",
+                  "image": "/projects/wektor-wiedzy-druk/relacje-1.jpg",
+                  "w": 2560,
+                  "h": 1022
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Niebieski",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Granat",
+            "hex": "#002066"
+          },
+          {
+            "name": "Jasny niebieski",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Błękit tła",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "wektor-wiedzy-ksiega-znaku": {
+        "title": "Księga znaku - Wektor Wiedzy",
+        "headline": "Księga znaku identyfikacji wizualnej",
+        "description": "Zaprojektowałam **17-stronicową księgę znaku** dla marki Wektor Wiedzy - od budowy i zasad stosowania logo, przez kolorystykę i typografię, po przykłady brandingu. Logo marki nie jest mojego autorstwa: przygotowałam jego wersję wektorową, na której oparłam całą księgę.",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-ksiega-znaku/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "branding",
+        "kind": "Księga znaku",
+        "period": "2026",
+        "short": "17-stronicowa księga znaku - zasady logo, kolory, typografia i przykłady brandingu.",
+        "cover": "/projects/wektor-wiedzy-ksiega-znaku/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Branding"
+        ],
+        "metaKind": "Księga znaku",
+        "categoryLabel": "Branding",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-ksiega-znaku/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Znak graficzny",
+              "items": [
+                {
+                  "image": "/projects/wektor-wiedzy-ksiega-znaku/znak-graficzny-1.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Układ horyzontalny",
+                  "caption": "Podstawowy wariant - nagłówki dokumentów, strony www i banery"
+                },
+                {
+                  "image": "/projects/wektor-wiedzy-ksiega-znaku/znak-graficzny-2.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Układ wertykalny",
+                  "caption": "Wariant do okładek, gadżetów i social mediów"
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Zawartość księgi",
+              "aside": "Pole ochronne  ·  kolory  ·  zasady  ·  typografia  ·  branding",
+              "image": "/projects/wektor-wiedzy-ksiega-znaku/strony-ksiegi.jpg",
+              "w": 2560,
+              "h": 1722
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Niebieski",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Granat",
+            "hex": "#002066"
+          },
+          {
+            "name": "Jasny niebieski",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Błękit tła",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "akk-social-media": {
+        "title": "Social media, e-mail i strona www - Akademia Kształcenia Kadr",
+        "headline": "Social media, e-mail i strona www",
+        "description": "Posty, karuzele i stories do prowadzenia profilu Akademii Kształcenia Kadr - firmy szkoleniowej dla księgowych i kadrowych - oraz okładki profili, banery i stopki mailowe. Od pierwszego posta „Cześć, tu AKK!” po serie eksperckie i zapowiedzi kursów. Poniżej wybrane projekty - **to tylko część grafik, które przygotowałam.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-social-media/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "social",
+        "kind": "Social media i komunikacja",
+        "period": "2026",
+        "short": "Posty, karuzele i stories od startu profilu, a do tego okładki, banery i stopki mailowe.",
+        "cover": "/projects/akk-social-media/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "heroTags": [
+          "Social media"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Social media · Profile · E-mail",
+        "categoryLabel": "Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-social-media/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Social media organiczne",
+              "aside": "Posty, karuzele i stories",
+              "groups": [
+                {
+                  "label": "Start profilu - przedstawienie marki",
+                  "image": "/projects/akk-social-media/organic-1.jpg",
+                  "w": 2560,
+                  "h": 746
+                },
+                {
+                  "label": "Karuzela „5 błędów w zamknięciu miesiąca”  ·  okładka i kolejne slajdy",
+                  "image": "/projects/akk-social-media/organic-2.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Karuzela „Znowu zmiana w przepisach”",
+                  "image": "/projects/akk-social-media/organic-3.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Q&A, porady eksperta i posty 1:1",
+                  "image": "/projects/akk-social-media/organic-4.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Karuzela „Zostań ekspertem AI”  ·  okładka i kolejne slajdy",
+                  "image": "/projects/akk-social-media/organic-5.jpg",
+                  "w": 2560,
+                  "h": 746
+                },
+                {
+                  "label": "Stories  ·  9:16",
+                  "image": "/projects/akk-social-media/organic-6.jpg",
+                  "w": 2560,
+                  "h": 822
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Profile, www i e-mail",
+              "aside": "Okładki, banery i stopki",
+              "groups": [
+                {
+                  "label": "Okładki profili  ·  Facebook i LinkedIn",
+                  "image": "/projects/akk-social-media/email-www-1.jpg",
+                  "w": 2560,
+                  "h": 392
+                },
+                {
+                  "label": "Kampania rekrutacyjna „Buduj karierę z nami”  ·  1840 × 920 i 1920 × 440",
+                  "image": "/projects/akk-social-media/email-www-2.jpg",
+                  "w": 2560,
+                  "h": 424
+                },
+                {
+                  "label": "Dzień Księgowego i Dzień Kadrowego  ·  baner www 1920 × 800 i stopka mailowa 2300 × 400",
+                  "image": "/projects/akk-social-media/email-www-3.jpg",
+                  "w": 2560,
+                  "h": 348
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Czerń",
+            "hex": "#122231"
+          },
+          {
+            "name": "Szary",
+            "hex": "#676767"
+          },
+          {
+            "name": "Jasny pomarańcz",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Tło",
+            "hex": "#FFF0EB"
+          }
+        ]
+      },
+      "akk-ksiega-znaku": {
+        "title": "Księga znaku - Akademia Kształcenia Kadr",
+        "headline": "Księga znaku Akademii Kształcenia Kadr",
+        "description": "Zaprojektowałam **13-stronicową księgę znaku** dla Akademii Kształcenia Kadr - firmy szkoleniowej. Opisuje budowę i zasady stosowania logo, kolorystykę, typografię i przykłady brandingu. Logo marki nie jest mojego autorstwa: przygotowałam jego wersję wektorową, na której oparłam całą księgę.",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-ksiega-znaku/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "branding",
+        "kind": "Księga znaku",
+        "period": "2026",
+        "short": "13-stronicowa księga znaku firmy szkoleniowej - logo, pole ochronne, kolory i typografia.",
+        "cover": "/projects/akk-ksiega-znaku/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "heroTags": [
+          "Branding"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Księga znaku",
+        "categoryLabel": "Branding",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-ksiega-znaku/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Znak graficzny",
+              "items": [
+                {
+                  "image": "/projects/akk-ksiega-znaku/znak-graficzny-1.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Znak graficzny",
+                  "caption": "Akronim AKK z sygnetem w miejscu ostatniej litery i pełną nazwą pod spodem"
+                },
+                {
+                  "image": "/projects/akk-ksiega-znaku/znak-graficzny-2.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Pole ochronne",
+                  "caption": "Moduł równy 1/2 wysokości sygnetu - wolna przestrzeń wokół znaku"
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Zawartość księgi",
+              "aside": "Kolory  ·  zasady  ·  typografia  ·  branding",
+              "image": "/projects/akk-ksiega-znaku/strony-ksiegi.jpg",
+              "w": 2560,
+              "h": 1722
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Pomarańczowy",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Czerń",
+            "hex": "#122231"
+          },
+          {
+            "name": "Szary",
+            "hex": "#676767"
+          },
+          {
+            "name": "Jasny pomarańcz",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Tło",
+            "hex": "#FFF0EB"
           }
         ]
       }

@@ -2,15 +2,23 @@ import { CONTAINER } from "@/components/home/section";
 import { SHOWCASE_STAGES } from "@/lib/showcase-stages";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { CSSProperties } from "react";
 import DeviceStage from "./device-stage";
 
-type Figure = { image: string; w: number; h: number; title: string; caption: string };
+type Picture = { image: string; w: number; h: number };
+type Figure = Picture & { title: string; caption: string };
 
 export type ShowcaseSection =
   | { type: "pair"; title: string; items: Figure[] }
-  | { type: "stage"; stage: string; title: string; aside?: string };
+  | { type: "stage"; stage: string; title: string; aside?: string }
+  /** A whole Figma stage exported as one picture (e.g. brand-book spreads). */
+  | ({ type: "panel"; title: string; aside?: string } & Picture)
+  /** An untitled full-width stage, like a second key visual. */
+  | ({ type: "visual" } & Picture)
+  /** Grey panel of labelled rows; each row is one exported strip of creatives. */
+  | { type: "gallery"; title: string; aside?: string; groups: (Picture & { label: string })[] };
 
-export type Showcase = { sections: ShowcaseSection[] };
+export type Showcase = { keyVisual?: Picture; sections: ShowcaseSection[] };
 
 type Props = {
   slug: string;
@@ -21,27 +29,58 @@ type Props = {
 const SECTION = cn(CONTAINER, "flex flex-col gap-8 pt-16 md:gap-10 md:pt-28");
 const SECTION_TITLE =
   "whitespace-pre-line font-display text-[32px] font-bold leading-[1.1] tracking-[-0.02em] text-ink md:text-[46px]";
+/** Stage panels are 1280 px wide in Figma; full-width pictures are served at that size. */
+const FULL_SIZES = "(min-width: 1440px) 1280px, 100vw";
+
+function Header({ title, aside }: { title: string; aside?: string }) {
+  return (
+    <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+      <h2 className={SECTION_TITLE}>{title}</h2>
+      {aside && <p className="text-sm font-medium text-plum-text md:whitespace-pre">{aside}</p>}
+    </div>
+  );
+}
+
+function Panel({ picture, alt }: { picture: Picture; alt: string }) {
+  return (
+    <Image
+      src={picture.image}
+      alt={alt}
+      width={picture.w}
+      height={picture.h}
+      sizes={FULL_SIZES}
+      className="h-auto w-full rounded-2xl"
+    />
+  );
+}
 
 /**
- * Case-study blocks from the Figma "Projekt/…" frames: the key visual stage, then
- * pairs of captioned images and mock-up stages (scrollable screens or photo grids).
+ * Case-study blocks from the Figma "Projekt/…" frames: the key visual, then
+ * pairs of captioned images, mock-up stages and galleries of campaign creatives.
  */
 export default function ShowcaseSections({ slug, showcase, name }: Props) {
   const stages = SHOWCASE_STAGES[slug];
-  if (!stages) return null;
+  if (!stages && !showcase.keyVisual) return null;
 
   return (
     <>
       <section className={CONTAINER} aria-label={name}>
-        <DeviceStage stage={stages.keyVisual} alt={name} />
+        {showcase.keyVisual ? (
+          <Panel picture={showcase.keyVisual} alt={name} />
+        ) : (
+          <DeviceStage stage={stages.keyVisual} alt={name} />
+        )}
       </section>
 
-      {showcase.sections.map((section) => {
+      {showcase.sections.map((section, index) => {
         if (section.type === "pair") {
           return (
             <section key={section.title} className={SECTION}>
               <h2 className={SECTION_TITLE}>{section.title}</h2>
-              <div className="grid gap-10 md:grid-cols-2 md:gap-8">
+              <div
+                className="grid gap-10 md:grid-cols-[var(--cols)] md:gap-8"
+                style={{ "--cols": section.items.map((item) => `${item.w}fr`).join(" ") } as CSSProperties}
+              >
                 {section.items.map((step) => (
                   <figure key={step.image} className="flex flex-col gap-4">
                     <Image
@@ -63,16 +102,54 @@ export default function ShowcaseSections({ slug, showcase, name }: Props) {
           );
         }
 
-        const stage = stages[section.stage];
+        if (section.type === "visual") {
+          return (
+            <section key={section.image} className={cn(CONTAINER, "pt-16 md:pt-28")}>
+              <Panel picture={section} alt={name} />
+            </section>
+          );
+        }
+
+        if (section.type === "panel") {
+          return (
+            <section key={section.image} className={SECTION}>
+              <Header title={section.title} aside={section.aside} />
+              <Panel picture={section} alt={`${name} - ${section.title}`} />
+            </section>
+          );
+        }
+
+        if (section.type === "gallery") {
+          return (
+            <section key={`${index}-${section.title}`} className={SECTION}>
+              <Header title={section.title} aside={section.aside} />
+              {/* Spacing in % of the panel width mirrors the Figma stage (64 px margins on 1280). */}
+              <div className="overflow-hidden rounded-2xl bg-[#e3e0e2] pb-[3.125%] pt-[5%]">
+                {section.groups.map((group, i) => (
+                  <figure key={group.image} className={cn(i > 0 && "mt-[1.875%]")}>
+                    <figcaption className="px-[5%] text-[13px] font-medium leading-snug text-muted-ink md:text-sm">
+                      {group.label}
+                    </figcaption>
+                    <Image
+                      src={group.image}
+                      alt={`${name} - ${group.label.split("  ·  ")[0]}`}
+                      width={group.w}
+                      height={group.h}
+                      sizes={FULL_SIZES}
+                      className="mt-[0.3%] h-auto w-full"
+                    />
+                  </figure>
+                ))}
+              </div>
+            </section>
+          );
+        }
+
+        const stage = stages?.[section.stage];
         if (!stage) return null;
         return (
           <section key={section.stage} className={SECTION}>
-            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-              <h2 className={SECTION_TITLE}>{section.title}</h2>
-              {section.aside && (
-                <p className="text-sm font-medium text-plum-text md:whitespace-pre">{section.aside}</p>
-              )}
-            </div>
+            <Header title={section.title} aside={section.aside} />
             <DeviceStage stage={stage} alt={`${name} - ${section.title.replace(/\n/g, " ")}`} />
           </section>
         );

@@ -7,13 +7,19 @@ import { useState } from "react";
 import Pill, { PillVariant } from "./pill";
 
 export type ProjectCategory = "web" | "print" | "branding" | "social";
-type Filter = "all" | ProjectCategory;
+export type ProjectBadge = "concept" | "commercial" | "team";
+type CategoryFilter = "featured" | ProjectCategory;
+/** Category filters, or `client:<id>` for the per-client filters after the separator. */
+type Filter = CategoryFilter | `client:${string}`;
 
 export type ProjectCardData = {
   slug: string;
   href: string;
   name: string;
   category: string;
+  client?: string;
+  badge: ProjectBadge;
+  featured: boolean;
   kind: string;
   period: string;
   short: string;
@@ -24,10 +30,11 @@ export type ProjectCardData = {
 type Props = {
   projects: ProjectCardData[];
   labels: {
-    concept: string;
+    badges: Record<ProjectBadge, string>;
     cta: string;
     empty: string;
-    filters: Record<Filter, string>;
+    filters: Record<CategoryFilter, string>;
+    clients: Record<string, string>;
   };
 };
 
@@ -42,32 +49,38 @@ const CATEGORY_PILL: Record<string, PillVariant> = {
 const REVEAL =
   "transition-opacity duration-300 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:opacity-100 group-focus-visible:opacity-100";
 
-const FILTERS: Filter[] =["all", "web", "print", "branding", "social"];
+const FILTERS: CategoryFilter[] = ["featured", "web", "print", "branding", "social"];
+
+function matches(project: ProjectCardData, filter: Filter) {
+  if (filter === "featured") return project.featured;
+  if (filter.startsWith("client:")) return project.client === filter.slice(7);
+  return project.category === filter;
+}
 
 export default function ProjectsGrid({ projects, labels }: Props) {
-  const [filter, setFilter] = useState<Filter>("all");
-  const visible =
-    filter === "all" ? projects : projects.filter((p) => p.category === filter);
+  const [filter, setFilter] = useState<Filter>("featured");
+  const visible = projects.filter((p) => matches(p, filter));
+
+  const button = (key: Filter, label: string) => (
+    <button
+      key={key}
+      type="button"
+      aria-pressed={filter === key}
+      onClick={() => setFilter(key)}
+      className="rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plum-text focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
+    >
+      <Pill variant={filter === key ? "ink" : "outline"} className="cursor-pointer transition-colors">
+        {label}
+      </Pill>
+    </button>
+  );
 
   return (
     <>
-      <div className="flex flex-wrap gap-2" role="group">
-        {FILTERS.map((key) => (
-          <button
-            key={key}
-            type="button"
-            aria-pressed={filter === key}
-            onClick={() => setFilter(key)}
-            className="rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-plum-text focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
-          >
-            <Pill
-              variant={filter === key ? "ink" : "outline"}
-              className="cursor-pointer transition-colors"
-            >
-              {labels.filters[key]}
-            </Pill>
-          </button>
-        ))}
+      <div className="flex flex-wrap items-center gap-2" role="group">
+        {FILTERS.map((key) => button(key, labels.filters[key]))}
+        <span aria-hidden="true" className="mx-1 h-5 w-px bg-line" />
+        {Object.entries(labels.clients).map(([id, name]) => button(`client:${id}`, name))}
       </div>
 
       {visible.length === 0 ? (
@@ -112,7 +125,7 @@ function ProjectCard({
           </span>
         </div>
         <span className={cn("absolute left-3.5 top-3.5 rounded-full bg-white px-2.5 py-[5px] text-[11px] font-bold leading-none tracking-[0.04em] text-night", REVEAL)}>
-          {labels.concept}
+          {labels.badges[project.badge]}
         </span>
       </div>
       <div className="flex items-center justify-between gap-3">
@@ -123,7 +136,7 @@ function ProjectCard({
           variant={CATEGORY_PILL[project.category] ?? "filled"}
           className={cn("shrink-0 text-xs", REVEAL)}
         >
-          {labels.filters[project.category as Filter] ?? project.category}
+          {labels.filters[project.category as CategoryFilter] ?? project.category}
         </Pill>
       </div>
       <p className="whitespace-pre-wrap text-sm font-medium text-plum-text">

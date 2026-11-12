@@ -106,6 +106,9 @@ export default async function Page({
   const palette = "palette" in project ? project.palette : [];
   // Figma shortens some hero titles ("Artiko" for "Artiko Festival").
   const heroName = "heroName" in project ? project.heroName : project.name;
+  const heroSub = "heroSub" in project ? project.heroSub : null;
+  const heroTags = "heroTags" in project ? project.heroTags : [categoryName];
+  const badge = ("badge" in project ? project.badge : "concept") as "concept" | "commercial" | "team";
 
   const meta = [
     { label: labels.kind, value: "metaKind" in project ? project.metaKind : project.kind },
@@ -124,16 +127,25 @@ export default async function Page({
           ← {labels.back}
         </Link>
         <div className="flex flex-wrap gap-2">
-          <Pill variant="plum" className="text-[13px]">
-            {categoryName}
-          </Pill>
+          {heroTags.map((tag) => (
+            <Pill key={tag} variant="plum" className="text-[13px]">
+              {tag}
+            </Pill>
+          ))}
           <Pill variant="filled" className="text-[13px]">
-            {labels.concept}
+            {labels[badge]}
           </Pill>
         </div>
-        <h1 className="font-display text-[clamp(64px,10.4vw,150px)] font-extrabold leading-[0.86] tracking-[-0.04em] text-ink">
-          {heroName}
-        </h1>
+        <div className="flex flex-col gap-4">
+          <h1 className="font-display text-[clamp(64px,10.4vw,150px)] font-extrabold leading-[0.86] tracking-[-0.04em] text-ink">
+            {heroName}
+          </h1>
+          {heroSub && (
+            <p className="font-display text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink md:text-[32px]">
+              {heroSub}
+            </p>
+          )}
+        </div>
         <div className="flex flex-col gap-6 pb-4 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
           <p className="max-w-[520px] whitespace-pre-line font-display text-[30px] font-bold leading-[1.05] tracking-[-0.02em] text-plum-text md:text-[44px]">
             {project.headline}

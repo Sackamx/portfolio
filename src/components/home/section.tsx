@@ -24,9 +24,11 @@ export function SectionIntro({
       )}
     >
       {heading}
-      <p className="max-w-[380px] text-base leading-[1.5] text-muted-ink md:text-lg">
-        {description}
-      </p>
+      {description && (
+        <p className="max-w-[380px] text-base leading-[1.5] text-muted-ink md:text-lg">
+          {description}
+        </p>
+      )}
     </div>
   );
 }

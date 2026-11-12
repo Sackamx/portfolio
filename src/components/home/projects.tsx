@@ -1,6 +1,7 @@
 import { Dict } from "@/dict/dict";
+import { PROJECTS } from "@/lib/const";
 import { cn } from "@/lib/utils";
-import ProjectsGrid, { ProjectCardData } from "./projects-grid";
+import ProjectsGrid, { ProjectBadge, ProjectCardData } from "./projects-grid";
 import { CONTAINER, DISPLAY_HEADING, SectionIntro } from "./section";
 
 type Props = {
@@ -10,19 +11,23 @@ type Props = {
 };
 
 export default function Projects({ locale, labels, items }: Props) {
-  const projects: ProjectCardData[] = Object.entries(items).map(
-    ([slug, item]) => ({
+  const projects: ProjectCardData[] = PROJECTS.filter((slug) => slug in items).map((slug) => {
+    const item = items[slug as keyof typeof items];
+    return {
       slug,
       href: `/${locale}/projects/${slug}`,
       name: item.name,
       category: item.category,
+      client: "client" in item ? item.client : undefined,
+      badge: ("badge" in item ? item.badge : "concept") as ProjectBadge,
+      featured: "featured" in item && item.featured,
       kind: item.kind,
       period: item.period,
       short: item.short,
       cover: "cover" in item ? item.cover : item.images[0],
       tools: item.tags.map((tag) => tag.replace(/^Adobe /, "")),
-    })
-  );
+    };
+  });
 
   return (
     <section
@@ -43,10 +48,11 @@ export default function Projects({ locale, labels, items }: Props) {
       <ProjectsGrid
         projects={projects}
         labels={{
-          concept: labels.concept,
+          badges: { concept: labels.concept, commercial: labels.commercial, team: labels.team },
           cta: labels.cta,
           empty: labels.empty,
           filters: labels.filters,
+          clients: labels.clients,
         }}
       />
     </section>

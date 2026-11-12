@@ -34,16 +34,23 @@
     "projects": {
       "eyebrow": "See my work",
       "title": "Projects",
-      "description": "Selected projects",
+      "description": "",
       "concept": "Concept",
       "cta": "View project →",
       "empty": "Projects in this category are coming soon.",
       "filters": {
-        "all": "All",
+        "featured": "Featured",
         "web": "Web",
         "print": "Print / DTP",
         "branding": "Branding",
         "social": "Social media"
+      },
+      "commercial": "Commercial project",
+      "team": "Team project",
+      "clients": {
+        "wektor-wiedzy": "Wektor Wiedzy",
+        "akk": "AKK",
+        "doin-digital": "Doin Digital"
       }
     },
     "experience": {
@@ -73,10 +80,10 @@
             "Oct 2026 - present"
           ],
           "roles": [
-            "Graphic designer, Marketing specialist",
+            "Marketing specialist (mainly graphic design)",
             "External design support"
           ],
-          "note": "and Akademia Kształcenia Kadr, IOB Wektor Wiedzy Wsparcie Innowacji, aizdofinansowaniem, Pozytywni CO2",
+          "note": "Related brands: Akademia Kształcenia Kadr, IOB Wektor Wiedzy Wsparcie Innowacji, aizdofinansowaniem, Pozytywni CO2",
           "bullets": [
             "Meta Ads and Google Ads campaigns",
             "Graphics for campaigns, social media and landing pages",
@@ -88,7 +95,7 @@
         {
           "company": "Freelance",
           "periods": [
-            "since 2024"
+            "Since 2024"
           ],
           "roles": [
             "Working with individual clients"
@@ -250,7 +257,9 @@
       "next": "Next photo",
       "open": "Enlarge photo",
       "close": "Close",
-      "palette": "Colour palette"
+      "palette": "Colour palette",
+      "commercial": "Commercial project",
+      "team": "Team project"
     },
     "items": {
       "fuoco-nero": {
@@ -403,7 +412,8 @@
             "name": "Mist",
             "hex": "#EFF1F1"
           }
-        ]
+        ],
+        "featured": true
       },
       "vasabi": {
         "title": "Vasabi - Restaurant Menu",
@@ -523,7 +533,8 @@
             "name": "White",
             "hex": "#FFFFFF"
           }
-        ]
+        ],
+        "featured": true
       },
       "kvisual": {
         "title": "Branding / Visual identity design - Kvisual",
@@ -683,6 +694,895 @@
           {
             "name": "Modern Gold",
             "hex": "#EF9F27"
+          }
+        ],
+        "featured": true
+      },
+      "wektor-wiedzy-kampanie": {
+        "title": "Meta Ads and Google Ads campaigns - Wektor Wiedzy",
+        "headline": "Meta Ads and Google Ads campaigns",
+        "description": "Ad creatives for Meta Ads and Google Ads campaigns for Wektor Wiedzy - a training company for accountants and HR specialists: webinars, subsidised courses, seasonal and sales promotions. Every campaign is a consistent set of formats, from 9:16 stories through 1:1 and 4:5 posts to 1.91:1 banners. Below is a selection - **only part of the graphics I made.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-kampanie/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "social",
+        "kind": "Ad campaigns",
+        "period": "2026",
+        "short": "Meta Ads and Google Ads creatives for a training company - webinars, courses and sales promotions.",
+        "cover": "/projects/wektor-wiedzy-kampanie/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "featured": true,
+        "heroTags": [
+          "Campaigns",
+          "Social media"
+        ],
+        "metaKind": "Ad creatives",
+        "categoryLabel": "Campaigns · Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-kampanie/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Webinar and event campaigns",
+              "groups": [
+                {
+                  "label": "Free webinar on AI in HR  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "“Artificial intelligence and GDPR”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Expert webinar series  ·  same layout, new topic and host",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "“HR Tuesdays” and “Tax Thursdays” series  ·  one template, different experts, 1:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-4.jpg",
+                  "w": 2560,
+                  "h": 416
+                },
+                {
+                  "label": "Courses subsidised up to 90%  ·  two creative directions: benefit and leisure",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-5.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "English courses - second direction: “Confident recruiting in English”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/meta-ads-6.jpg",
+                  "w": 2560,
+                  "h": 672
+                }
+              ]
+            },
+            {
+              "type": "visual",
+              "image": "/projects/wektor-wiedzy-kampanie/key-visual-google-ads.jpg",
+              "w": 2560,
+              "h": 1600
+            },
+            {
+              "type": "gallery",
+              "title": "Google Ads",
+              "aside": "Performance Max and sales campaigns",
+              "groups": [
+                {
+                  "label": "Black Weeks - up to −50% with code BLACK26  ·  1.91:1 · 1:1 · 9:16",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-1.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "PLN 500 gift for HR Day and Accountants' Day  ·  3 creative variants, 1:1",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "Business English course  ·  5 creative variants for testing",
+                  "image": "/projects/wektor-wiedzy-kampanie/google-ads-3.jpg",
+                  "w": 2560,
+                  "h": 494
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Blue",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Navy",
+            "hex": "#002066"
+          },
+          {
+            "name": "Light blue",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Background blue",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Orange",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "akk-kampanie": {
+        "title": "Meta Ads and Google Ads campaigns - Akademia Kształcenia Kadr",
+        "headline": "Meta Ads and Google Ads campaigns",
+        "description": "Ad creatives for Meta Ads and Google Ads campaigns for Akademia Kształcenia Kadr - a training company for accountants and HR specialists: subsidised residential and accounting courses, corporate training and seasonal promotions. Every campaign is a consistent set of formats with several message directions to test. Below is a selection - **only part of the graphics I made.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-kampanie/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "social",
+        "kind": "Ad campaigns",
+        "period": "2026",
+        "short": "Meta Ads and Google Ads for Akademia Kształcenia Kadr - subsidised courses and corporate training.",
+        "cover": "/projects/akk-kampanie/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "featured": true,
+        "heroTags": [
+          "Campaigns",
+          "Social media"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Ad creatives",
+        "categoryLabel": "Campaigns · Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-kampanie/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Residential courses, corporate training and seasonal promotions",
+              "groups": [
+                {
+                  "label": "Residential courses subsidised up to 90%  ·  5 creative directions in 9:16 stories",
+                  "image": "/projects/akk-kampanie/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 822
+                },
+                {
+                  "label": "The same directions in the feed  ·  1:1",
+                  "image": "/projects/akk-kampanie/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Corporate training  ·  6 headlines for one campaign, 4:5",
+                  "image": "/projects/akk-kampanie/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "“Do you want to train your team?”  ·  9:16 · 1:1 · 1.91:1",
+                  "image": "/projects/akk-kampanie/meta-ads-4.jpg",
+                  "w": 2560,
+                  "h": 572
+                },
+                {
+                  "label": "Advanced courses: Accounting and tax in practice, Accounting Academy, VAT Platform  ·  4:5 and 9:16",
+                  "image": "/projects/akk-kampanie/meta-ads-5.jpg",
+                  "w": 2560,
+                  "h": 612
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Google Ads",
+              "aside": "Performance Max",
+              "groups": [
+                {
+                  "label": "Performance Max - accounting courses subsidised from PLN 5,000 to 15,000  ·  4:5 · 1:1 · 1.91:1",
+                  "image": "/projects/akk-kampanie/google-ads-1.jpg",
+                  "w": 2560,
+                  "h": 662
+                },
+                {
+                  "label": "More message directions: up to 90% funding and help with the job centre application  ·  4:5 and 1.91:1",
+                  "image": "/projects/akk-kampanie/google-ads-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Orange",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Black",
+            "hex": "#122231"
+          },
+          {
+            "name": "Grey",
+            "hex": "#676767"
+          },
+          {
+            "name": "Light orange",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Background",
+            "hex": "#FFF0EB"
+          }
+        ]
+      },
+      "doin-digital": {
+        "title": "Reels, posts and ads - Doin Digital",
+        "headline": "Reels, posts and ads for online courses",
+        "description": "Doin Digital is an online course brand I co-founded. The content was made as a team and largely with AI - based on a skill in which we wrote down the brand rules. **I recorded and published the reels, applied revisions to the designs and polished the copy.** Below is a selection.",
+        "dates": "2026",
+        "tags": [
+          "Claude",
+          "Figma"
+        ],
+        "images": [
+          "/projects/doin-digital/cover.jpg"
+        ],
+        "name": "Doin Digital",
+        "category": "social",
+        "kind": "Reels, posts and ads",
+        "period": "2026",
+        "short": "An online course brand: my reels, design revisions and copywriting in team work with AI.",
+        "cover": "/projects/doin-digital/cover.jpg",
+        "client": "doin-digital",
+        "badge": "team",
+        "featured": true,
+        "heroTags": [
+          "Social media",
+          "Campaigns"
+        ],
+        "metaKind": "Reels · Posts · Meta Ads",
+        "categoryLabel": "Social media · Campaigns",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/doin-digital/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Reels",
+              "aside": "Recorded and published by me",
+              "groups": [
+                {
+                  "label": "9:16 reels  ·  recording, on-camera presenting and publishing",
+                  "image": "/projects/doin-digital/rolki-1.jpg",
+                  "w": 2560,
+                  "h": 1001
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Posts and carousels",
+              "aside": "Education, course sales and a collage series",
+              "groups": [
+                {
+                  "label": "Carousel “4 steps to your course's success”  ·  cover and slides",
+                  "image": "/projects/doin-digital/posty-1.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Carousel “5 mistakes that stop your landing page selling”  ·  cover, 5 mistakes and CTA",
+                  "image": "/projects/doin-digital/posty-2.jpg",
+                  "w": 2560,
+                  "h": 432
+                },
+                {
+                  "label": "Carousel “Talking to a client”  ·  hook, objections and CTA",
+                  "image": "/projects/doin-digital/posty-3.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Post templates: receipt, poll, clipping, boarding pass, warning, before / after",
+                  "image": "/projects/doin-digital/posty-4.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Single posts",
+                  "image": "/projects/doin-digital/posty-5.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Collage series",
+                  "image": "/projects/doin-digital/posty-6.jpg",
+                  "w": 2560,
+                  "h": 763
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Meta Ads",
+              "aside": "Ads for courses and the sales page",
+              "groups": [
+                {
+                  "label": "Sales page - set A, standing offer  ·  1:1",
+                  "image": "/projects/doin-digital/meta-ads-1.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Set B with code STRONA50 (−50%)  ·  9:16",
+                  "image": "/projects/doin-digital/meta-ads-2.jpg",
+                  "w": 2560,
+                  "h": 792
+                },
+                {
+                  "label": "“AI + Figma” course  ·  10 creative directions, 6 of them in 1:1",
+                  "image": "/projects/doin-digital/meta-ads-3.jpg",
+                  "w": 2560,
+                  "h": 416
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Violet",
+            "hex": "#5711C2"
+          },
+          {
+            "name": "Dark violet",
+            "hex": "#23074E"
+          },
+          {
+            "name": "Lime",
+            "hex": "#A3F36A"
+          },
+          {
+            "name": "Pink",
+            "hex": "#FF96C7"
+          },
+          {
+            "name": "Orange",
+            "hex": "#F77308"
+          }
+        ]
+      },
+      "wektor-wiedzy-social-media": {
+        "title": "Social media, e-mail and website - Wektor Wiedzy",
+        "headline": "Social media, e-mail and website",
+        "description": "Organic post templates, e-mail footers and website banners for Wektor Wiedzy - a training company for accountants and HR specialists. Recurring messages such as webinars, training and schedules have a fixed layout, so new graphics are quick to make and look consistent. Below is a selection - **only part of the graphics I made.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-social-media/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "social",
+        "kind": "Social media and communication",
+        "period": "2026",
+        "short": "Post templates, e-mail footers and website banners - consistent communication for a training company.",
+        "cover": "/projects/wektor-wiedzy-social-media/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Social media"
+        ],
+        "metaKind": "Social media · E-mail · Web",
+        "categoryLabel": "Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-social-media/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Organic social media",
+              "aside": "Webinars, training, schedules and blog",
+              "groups": [
+                {
+                  "label": "Free webinars  ·  light and dark versions of one template",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-1.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Training and courses",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-2.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Webinar schedules",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-3.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Expert posts and blog articles",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-4.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Events, training and schedules  ·  4:5",
+                  "image": "/projects/wektor-wiedzy-social-media/organic-5.jpg",
+                  "w": 2560,
+                  "h": 746
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "E-mail and website",
+              "aside": "E-mail footers and banners",
+              "groups": [
+                {
+                  "label": "“September full of knowledge”  ·  1920 × 800 web banner and 4:5 post",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-1.jpg",
+                  "w": 2560,
+                  "h": 542
+                },
+                {
+                  "label": "Tax conference  ·  banner and vertical version",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-2.jpg",
+                  "w": 2560,
+                  "h": 672
+                },
+                {
+                  "label": "E-mail footers",
+                  "image": "/projects/wektor-wiedzy-social-media/email-www-3.jpg",
+                  "w": 2560,
+                  "h": 1130
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Blue",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Navy",
+            "hex": "#002066"
+          },
+          {
+            "name": "Light blue",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Background blue",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Orange",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "wektor-wiedzy-druk": {
+        "title": "Gift vouchers and a photo wall - Wektor Wiedzy",
+        "headline": "Gift vouchers and a photo wall",
+        "description": "PLN 1,000 gift vouchers and a branded photo wall for Wektor Wiedzy, designed in Illustrator and printed. They accompanied the company's **residential training events**, including in Kołobrzeg and Krynica-Zdrój.",
+        "dates": "2026",
+        "tags": [
+          "Adobe Illustrator"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-druk/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "print",
+        "kind": "Vouchers and photo wall",
+        "period": "2026",
+        "short": "PLN 1,000 gift vouchers and a photo wall - printed and used at residential training events.",
+        "cover": "/projects/wektor-wiedzy-druk/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Print / DTP"
+        ],
+        "metaKind": "Print · Vouchers · Photo wall",
+        "categoryLabel": "Print / DTP",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-druk/key-visual.jpg",
+            "w": 2560,
+            "h": 1524
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Vouchers",
+              "items": [
+                {
+                  "image": "/projects/wektor-wiedzy-druk/bony-1.jpg",
+                  "w": 1598,
+                  "h": 820,
+                  "title": "Voucher for the “Full delegation” course",
+                  "caption": "Version with a photo from the training room"
+                },
+                {
+                  "image": "/projects/wektor-wiedzy-druk/bony-2.jpg",
+                  "w": 616,
+                  "h": 820,
+                  "title": "The voucher in a participant's hands",
+                  "caption": "The same design printed, at the training"
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "At the training events",
+              "aside": "The photo wall and vouchers in Wektor Wiedzy's stories",
+              "groups": [
+                {
+                  "label": "Instagram stories",
+                  "image": "/projects/wektor-wiedzy-druk/relacje-1.jpg",
+                  "w": 2560,
+                  "h": 1022
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Blue",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Navy",
+            "hex": "#002066"
+          },
+          {
+            "name": "Light blue",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Background blue",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Orange",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "wektor-wiedzy-ksiega-znaku": {
+        "title": "Brand book - Wektor Wiedzy",
+        "headline": "Visual identity brand book",
+        "description": "I designed a **17-page brand book** for Wektor Wiedzy - from the logo's construction and usage rules, through colours and typography, to branding examples. The logo itself is not my design: I prepared its vector version, on which the whole book is based.",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/wektor-wiedzy-ksiega-znaku/cover.jpg"
+        ],
+        "name": "Wektor Wiedzy",
+        "category": "branding",
+        "kind": "Brand book",
+        "period": "2026",
+        "short": "A 17-page brand book - logo rules, colours, typography and branding examples.",
+        "cover": "/projects/wektor-wiedzy-ksiega-znaku/cover.jpg",
+        "client": "wektor-wiedzy",
+        "badge": "commercial",
+        "heroTags": [
+          "Branding"
+        ],
+        "metaKind": "Brand book",
+        "categoryLabel": "Branding",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/wektor-wiedzy-ksiega-znaku/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Logo",
+              "items": [
+                {
+                  "image": "/projects/wektor-wiedzy-ksiega-znaku/znak-graficzny-1.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Horizontal layout",
+                  "caption": "The primary version - document headers, websites and banners"
+                },
+                {
+                  "image": "/projects/wektor-wiedzy-ksiega-znaku/znak-graficzny-2.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Vertical layout",
+                  "caption": "The version for covers, merchandise and social media"
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Inside the book",
+              "aside": "Clear space  ·  colours  ·  rules  ·  typography  ·  branding",
+              "image": "/projects/wektor-wiedzy-ksiega-znaku/strony-ksiegi.jpg",
+              "w": 2560,
+              "h": 1722
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Blue",
+            "hex": "#0033A1"
+          },
+          {
+            "name": "Navy",
+            "hex": "#002066"
+          },
+          {
+            "name": "Light blue",
+            "hex": "#C2D5FF"
+          },
+          {
+            "name": "Background blue",
+            "hex": "#EBF1FF"
+          },
+          {
+            "name": "Orange",
+            "hex": "#FF9D0A"
+          }
+        ]
+      },
+      "akk-social-media": {
+        "title": "Social media, e-mail and website - Akademia Kształcenia Kadr",
+        "headline": "Social media, e-mail and website",
+        "description": "Posts, carousels and stories for running the profile of Akademia Kształcenia Kadr - a training company for accountants and HR specialists - plus profile covers, banners and e-mail footers. From the very first “Hi, this is AKK!” post to expert series and course announcements. Below is a selection - **only part of the graphics I made.**",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-social-media/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "social",
+        "kind": "Social media and communication",
+        "period": "2026",
+        "short": "Posts, carousels and stories from the profile launch, plus covers, banners and e-mail footers.",
+        "cover": "/projects/akk-social-media/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "heroTags": [
+          "Social media"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Social media · Profiles · E-mail",
+        "categoryLabel": "Social media",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-social-media/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "gallery",
+              "title": "Organic social media",
+              "aside": "Posts, carousels and stories",
+              "groups": [
+                {
+                  "label": "Profile launch - introducing the brand",
+                  "image": "/projects/akk-social-media/organic-1.jpg",
+                  "w": 2560,
+                  "h": 746
+                },
+                {
+                  "label": "Carousel “5 month-end closing mistakes”  ·  cover and slides",
+                  "image": "/projects/akk-social-media/organic-2.jpg",
+                  "w": 2560,
+                  "h": 502
+                },
+                {
+                  "label": "Carousel “The rules changed again”",
+                  "image": "/projects/akk-social-media/organic-3.jpg",
+                  "w": 2560,
+                  "h": 600
+                },
+                {
+                  "label": "Q&A, expert tips and 1:1 posts",
+                  "image": "/projects/akk-social-media/organic-4.jpg",
+                  "w": 2560,
+                  "h": 612
+                },
+                {
+                  "label": "Carousel “Become an AI expert”  ·  cover and slides",
+                  "image": "/projects/akk-social-media/organic-5.jpg",
+                  "w": 2560,
+                  "h": 746
+                },
+                {
+                  "label": "Stories  ·  9:16",
+                  "image": "/projects/akk-social-media/organic-6.jpg",
+                  "w": 2560,
+                  "h": 822
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "title": "Profiles, web and e-mail",
+              "aside": "Covers, banners and footers",
+              "groups": [
+                {
+                  "label": "Profile covers  ·  Facebook and LinkedIn",
+                  "image": "/projects/akk-social-media/email-www-1.jpg",
+                  "w": 2560,
+                  "h": 392
+                },
+                {
+                  "label": "Recruitment campaign “Build your career with us”  ·  1840 × 920 and 1920 × 440",
+                  "image": "/projects/akk-social-media/email-www-2.jpg",
+                  "w": 2560,
+                  "h": 424
+                },
+                {
+                  "label": "Accountants' Day and HR Day  ·  1920 × 800 web banner and 2300 × 400 e-mail footer",
+                  "image": "/projects/akk-social-media/email-www-3.jpg",
+                  "w": 2560,
+                  "h": 348
+                }
+              ]
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Orange",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Black",
+            "hex": "#122231"
+          },
+          {
+            "name": "Grey",
+            "hex": "#676767"
+          },
+          {
+            "name": "Light orange",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Background",
+            "hex": "#FFF0EB"
+          }
+        ]
+      },
+      "akk-ksiega-znaku": {
+        "title": "Brand book - Akademia Kształcenia Kadr",
+        "headline": "Brand book for Akademia Kształcenia Kadr",
+        "description": "I designed a **13-page brand book** for Akademia Kształcenia Kadr - a training company. It covers the logo's construction and usage rules, colours, typography and branding examples. The logo itself is not my design: I prepared its vector version, on which the whole book is based.",
+        "dates": "2026",
+        "tags": [
+          "Figma"
+        ],
+        "images": [
+          "/projects/akk-ksiega-znaku/cover.jpg"
+        ],
+        "name": "AKK",
+        "category": "branding",
+        "kind": "Brand book",
+        "period": "2026",
+        "short": "A 13-page brand book for a training company - logo, clear space, colours and typography.",
+        "cover": "/projects/akk-ksiega-znaku/cover.jpg",
+        "client": "akk",
+        "badge": "commercial",
+        "heroTags": [
+          "Branding"
+        ],
+        "heroSub": "(Akademia Kształcenia Kadr)",
+        "metaKind": "Brand book",
+        "categoryLabel": "Branding",
+        "showcase": {
+          "keyVisual": {
+            "image": "/projects/akk-ksiega-znaku/key-visual.jpg",
+            "w": 2560,
+            "h": 1600
+          },
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Logo",
+              "items": [
+                {
+                  "image": "/projects/akk-ksiega-znaku/znak-graficzny-1.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Logo",
+                  "caption": "The AKK acronym with the symbol in place of the last letter and the full name below"
+                },
+                {
+                  "image": "/projects/akk-ksiega-znaku/znak-graficzny-2.jpg",
+                  "w": 1248,
+                  "h": 768,
+                  "title": "Clear space",
+                  "caption": "A module equal to 1/2 of the symbol's height - free space around the logo"
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Inside the book",
+              "aside": "Colours  ·  rules  ·  typography  ·  branding",
+              "image": "/projects/akk-ksiega-znaku/strony-ksiegi.jpg",
+              "w": 2560,
+              "h": 1722
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Orange",
+            "hex": "#FF662B"
+          },
+          {
+            "name": "Black",
+            "hex": "#122231"
+          },
+          {
+            "name": "Grey",
+            "hex": "#676767"
+          },
+          {
+            "name": "Light orange",
+            "hex": "#FFB699"
+          },
+          {
+            "name": "Background",
+            "hex": "#FFF0EB"
           }
         ]
       }
