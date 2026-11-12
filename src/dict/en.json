@@ -249,16 +249,18 @@
       "prev": "Previous photo",
       "next": "Next photo",
       "open": "Enlarge photo",
-      "close": "Close"
+      "close": "Close",
+      "palette": "Colour palette"
     },
     "items": {
       "fuoco-nero": {
         "title": "Fuoco Nero - Premium Coffee Brand Website",
-        "headline": "Website for a premium coffee brand",
-        "description": "Fuoco Nero is an exclusive premium coffee brand created for true connoisseurs. Its visual identity is built on a **dark, elegant aesthetic**, strong contrasts, and refined details that emphasize the luxurious character of the product - from packaging to the digital experience.",
+        "headline": "Website for a\npremium coffee brand",
+        "description": "Fuoco Nero is an exclusive premium coffee brand created for true connoisseurs. Its visual identity is built on a **dark, elegant aesthetic**, strong contrasts, and refined details that emphasize the luxurious character of the product.",
         "dates": "Nov 2025 - Dec 2025",
         "tags": [
-          "Adobe Photoshop"
+          "Adobe Photoshop",
+          "Figma"
         ],
         "images": [
           "/projects/fuoco-nero/MacBook_Mockup_1.jpg",
@@ -268,9 +270,140 @@
         ],
         "name": "Fuoco Nero",
         "category": "web",
-        "kind": "Coffee brand website",
+        "kind": "Website",
         "period": "Nov - Dec 2025",
-        "short": "Premium coffee for connoisseurs - a dark, elegant style with strong contrasts."
+        "short": "Premium coffee for connoisseurs - a dark, elegant style with strong contrasts.",
+        "cover": "/projects/fuoco-nero/cover.png",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "From wireframe to final UI",
+              "items": [
+                {
+                  "image": "/projects/fuoco-nero/wireframe.png",
+                  "title": "Wireframe",
+                  "caption": "Section layout on a 1440 px grid, without colours or photos",
+                  "w": 1248,
+                  "h": 1604
+                },
+                {
+                  "image": "/projects/fuoco-nero/ui.png",
+                  "title": "Final UI",
+                  "caption": "Dark background, copper accents and Montserrat typography",
+                  "w": 1248,
+                  "h": 1604
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "rwd",
+              "title": "One page,\nthree screen sizes",
+              "aside": "L 1440 px  ·  M 834 px  ·  S 430 px"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Black",
+            "hex": "#020202"
+          },
+          {
+            "name": "Graphite",
+            "hex": "#121212"
+          },
+          {
+            "name": "Copper",
+            "hex": "#E19F65"
+          },
+          {
+            "name": "Dark copper",
+            "hex": "#623914"
+          },
+          {
+            "name": "White",
+            "hex": "#FFFFFF"
+          }
+        ]
+      },
+      "core-motion-physiotherapy": {
+        "title": "Coremotion Physiotherapy - Brochure",
+        "headline": "Tri-fold brochure for\na physiotherapy clinic",
+        "description": "The **Coremotion Physiotherapy** brochure was designed to communicate the clinic’s mission of _“Pain-Free Living”_ while providing essential information about their physiotherapy services in a clear and approachable way. The tri-fold format ensures a professional and practical layout, perfect for distribution in clinics, community centers, and wellness events.",
+        "dates": "Aug 2024 - Sep 2024",
+        "tags": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign"
+        ],
+        "images": [
+          "/projects/core-motion-physiotherapy/mockup2.jpg",
+          "/projects/core-motion-physiotherapy/mockup3.jpg"
+        ],
+        "name": "Coremotion Physiotherapy",
+        "category": "print",
+        "kind": "Brochure",
+        "period": "Aug - Sep 2024",
+        "short": "A clinic brochure built around “Pain-Free Living” - services explained clearly.",
+        "heroName": "Coremotion",
+        "cover": "/projects/core-motion-physiotherapy/cover.jpg",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Tri-fold brochure design",
+              "items": [
+                {
+                  "image": "/projects/core-motion-physiotherapy/outside.jpg",
+                  "w": 1244,
+                  "h": 878,
+                  "title": "Outside",
+                  "caption": "Cover with the logo and tagline, back panel with contact details"
+                },
+                {
+                  "image": "/projects/core-motion-physiotherapy/inside.jpg",
+                  "w": 1244,
+                  "h": 878,
+                  "title": "Inside",
+                  "caption": "Services, treatment methods and the clinic's philosophy"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "print",
+              "title": "The brochure in print",
+              "aside": "DL format  ·  folded in three"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Navy",
+            "hex": "#365296"
+          },
+          {
+            "name": "Blue",
+            "hex": "#5F84C3"
+          },
+          {
+            "name": "Green",
+            "hex": "#84C59D"
+          },
+          {
+            "name": "Plum",
+            "hex": "#AD69A8"
+          },
+          {
+            "name": "Lavender",
+            "hex": "#D4D6E9"
+          },
+          {
+            "name": "Mist",
+            "hex": "#EFF1F1"
+          }
+        ]
       },
       "vasabi": {
         "title": "Vasabi - Restaurant Menu",
@@ -292,31 +425,109 @@
         "category": "print",
         "kind": "Restaurant menu",
         "period": "Feb - Mar 2024",
-        "short": "Modern minimalism combined with traditional Japanese aesthetics."
+        "short": "Modern minimalism combined with traditional Japanese aesthetics.",
+        "palette": [
+          {
+            "name": "Cream",
+            "hex": "#F2F3DF"
+          },
+          {
+            "name": "Red",
+            "hex": "#D66145"
+          },
+          {
+            "name": "Green",
+            "hex": "#5D883C"
+          },
+          {
+            "name": "Brown",
+            "hex": "#634438"
+          },
+          {
+            "name": "Beige",
+            "hex": "#E1DDC9"
+          }
+        ]
       },
-      "core-motion-physiotherapy": {
-        "title": "Coremotion Physiotherapy - Brochure",
-        "headline": "Physiotherapy clinic brochure",
-        "description": "The **Coremotion Physiotherapy** brochure was designed to communicate the clinic’s mission of _“Pain-Free Living”_ while providing essential information about their physiotherapy services in a clear and approachable way. The tri-fold format ensures a professional and practical layout, perfect for distribution in clinics, community centers, and wellness events.",
-        "dates": "Aug 2024 - Sep 2024",
+      "homely": {
+        "title": "Responsive real estate landing page - Homely",
+        "headline": "Responsive landing page\nfor a real estate agency",
+        "description": "Homely is a website concept for a real estate agency that helps people find their dream home. The project went all the way - from sketches and wireframes, through a UI kit concept, to a finished interface in three screen sizes.",
+        "dates": "Dec 2025",
         "tags": [
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-          "Adobe InDesign"
+          "Figma"
         ],
         "images": [
-          "/projects/core-motion-physiotherapy/mockup2.jpg",
-          "/projects/core-motion-physiotherapy/mockup3.jpg"
+          "/projects/homely/cover.png"
         ],
-        "name": "Coremotion Physiotherapy",
-        "category": "print",
-        "kind": "Brochure",
-        "period": "Aug - Sep 2024",
-        "short": "A clinic brochure built around “Pain-Free Living” - services explained clearly."
+        "name": "Homely",
+        "category": "web",
+        "kind": "Responsive landing page",
+        "period": "Dec 2025",
+        "short": "A real estate agency website from sketch to final UI - desktop, tablet and mobile.",
+        "cover": "/projects/homely/cover.png",
+        "categoryLabel": "Web · UX/UI",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "From wireframe to final UI",
+              "items": [
+                {
+                  "image": "/projects/homely/wireframe.png",
+                  "title": "Wireframe",
+                  "caption": "Section layout on a 1440 px grid, without colours or photos",
+                  "w": 1248,
+                  "h": 1604
+                },
+                {
+                  "image": "/projects/homely/ui.png",
+                  "title": "Final UI",
+                  "caption": "Brand colours, listing photos and Open Sans typography",
+                  "w": 1248,
+                  "h": 1604
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "rwd",
+              "title": "One page,\nthree screen sizes",
+              "aside": "L 1440 px  ·  M 834 px  ·  S 430 px"
+            },
+            {
+              "type": "stage",
+              "stage": "projects",
+              "title": "Projects subpage"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Blue",
+            "hex": "#2563EB"
+          },
+          {
+            "name": "Light blue",
+            "hex": "#D9E6FF"
+          },
+          {
+            "name": "Orange",
+            "hex": "#EB8831"
+          },
+          {
+            "name": "Graphite",
+            "hex": "#1F1F1F"
+          },
+          {
+            "name": "White",
+            "hex": "#FFFFFF"
+          }
+        ]
       },
       "kvisual": {
         "title": "Branding / Visual identity design - Kvisual",
-        "headline": "Visual identity for a design studio",
+        "headline": "Visual identity for\na design studio",
         "description": "Kvisual is a **modern graphic design studio** specializing in visual identity design, advertising materials, and promotional campaigns. The brand combines **simplicity with expressiveness**, using clean lines, contrasting colors (black, white, and creative purple #6020B8), and a **geometric, futuristic-inspired logo**.",
         "dates": "Jun 2025 - Jul 2025",
         "tags": [
@@ -336,7 +547,144 @@
         "category": "branding",
         "kind": "Visual identity",
         "period": "Jun - Jul 2025",
-        "short": "A design studio brand - simple, expressive, with a geometric futuristic logo."
+        "short": "A design studio identity - geometric logo, business cards and brand materials.",
+        "metaKind": "Branding",
+        "cover": "/projects/kvisual/cover.jpg",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Identity in use",
+              "items": [
+                {
+                  "image": "/projects/kvisual/sign.jpg",
+                  "w": 1244,
+                  "h": 700,
+                  "title": "Symbol",
+                  "caption": "A geometric mark inspired by futuristic design"
+                },
+                {
+                  "image": "/projects/kvisual/logotype.jpg",
+                  "w": 1244,
+                  "h": 700,
+                  "title": "Wordmark",
+                  "caption": "The full brand name in the symbol's geometric style"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "brand",
+              "title": "The brand in practice",
+              "aside": "Stamp  ·  social media  ·  packaging"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Violet",
+            "hex": "#5407B8"
+          },
+          {
+            "name": "Light violet",
+            "hex": "#8350C4"
+          },
+          {
+            "name": "Black",
+            "hex": "#1C1C1C"
+          },
+          {
+            "name": "Graphite",
+            "hex": "#3D3C3F"
+          },
+          {
+            "name": "Light grey",
+            "hex": "#E6E6E6"
+          }
+        ]
+      },
+      "artiko-festival": {
+        "title": "Festival visual identity - Artiko Festival",
+        "headline": "Visual identity for a\nfestival of connection",
+        "description": "Artiko Festival is an annual **festival of human connection** - a bit like networking, but focused on personal relationships. I designed its **complete identity**: logo, brand book, print materials, social media and website.",
+        "dates": "Jan 2026",
+        "tags": [
+          "Figma",
+          "Adobe Photoshop"
+        ],
+        "images": [
+          "/projects/artiko-festival/cover.jpg"
+        ],
+        "name": "Artiko Festival",
+        "category": "branding",
+        "kind": "Festival identity",
+        "period": "Jan 2026",
+        "short": "A complete festival identity - logo, brand book, print, social media and website.",
+        "cover": "/projects/artiko-festival/cover.jpg",
+        "heroName": "Artiko",
+        "metaKind": "Branding · Web",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "The logo on light and dark backgrounds",
+              "items": [
+                {
+                  "image": "/projects/artiko-festival/logo-dark.jpg",
+                  "w": 1244,
+                  "h": 1176,
+                  "title": "Dark theme",
+                  "caption": "The logo on Dark Violet with constellations"
+                },
+                {
+                  "image": "/projects/artiko-festival/logo-light.jpg",
+                  "w": 1244,
+                  "h": 1176,
+                  "title": "Light theme",
+                  "caption": "The same composition on white"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "print",
+              "title": "Print materials and merch",
+              "aside": "Bus stop  ·  billboard  ·  roll-up  ·  tote bag  ·  wristband"
+            },
+            {
+              "type": "stage",
+              "stage": "social",
+              "title": "Social media and website",
+              "aside": "Instagram carousel  ·  website on a laptop"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Dark Violet",
+            "hex": "#1A1028"
+          },
+          {
+            "name": "Violet",
+            "hex": "#7C5CBF"
+          },
+          {
+            "name": "Light Violet",
+            "hex": "#9B7FE8"
+          },
+          {
+            "name": "Mint",
+            "hex": "#6ECFB5"
+          },
+          {
+            "name": "Dark Mint",
+            "hex": "#1E9E75"
+          },
+          {
+            "name": "Modern Gold",
+            "hex": "#EF9F27"
+          }
+        ]
       }
     }
   },

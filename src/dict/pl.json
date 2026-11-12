@@ -249,16 +249,18 @@
       "prev": "Poprzednie zdjęcie",
       "next": "Następne zdjęcie",
       "open": "Powiększ zdjęcie",
-      "close": "Zamknij"
+      "close": "Zamknij",
+      "palette": "Paleta kolorów"
     },
     "items": {
       "fuoco-nero": {
         "title": "Strony internetowa marki kawy - Fuoco Nero",
-        "headline": "Strona internetowa marki kawy premium",
+        "headline": "Strona internetowa\nmarki kawy premium",
         "description": "Fuoco Nero to ekskluzywna marka kawy premium skierowana do koneserów. Jej identyfikacja wizualna opiera się na **ciemnej, eleganckiej stylistyce**, mocnych kontrastach oraz wysmakowanych detalach, które podkreślają luksusowy charakter produktu.",
         "dates": "Lis 2025 - Gru 2025",
         "tags": [
-          "Adobe Photoshop"
+          "Adobe Photoshop",
+          "Figma"
         ],
         "images": [
           "/projects/fuoco-nero/MacBook_Mockup_1.jpg",
@@ -268,9 +270,140 @@
         ],
         "name": "Fuoco Nero",
         "category": "web",
-        "kind": "Strona internetowa marki kawy",
+        "kind": "Strona internetowa",
         "period": "Lis - Gru 2025",
-        "short": "Kawa premium dla koneserów - ciemna, elegancka stylistyka i mocne kontrasty."
+        "short": "Kawa premium dla koneserów - ciemna, elegancka stylistyka i mocne kontrasty.",
+        "cover": "/projects/fuoco-nero/cover.png",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Od wireframe'u do gotowego UI",
+              "items": [
+                {
+                  "image": "/projects/fuoco-nero/wireframe.png",
+                  "title": "Wireframe",
+                  "caption": "Układ sekcji w siatce 1440 px, bez kolorów i zdjęć",
+                  "w": 1248,
+                  "h": 1604
+                },
+                {
+                  "image": "/projects/fuoco-nero/ui.png",
+                  "title": "Gotowy UI",
+                  "caption": "Ciemne tło, miedziane akcenty i typografia Montserrat",
+                  "w": 1248,
+                  "h": 1604
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "rwd",
+              "title": "Jedna strona,\ntrzy rozdzielczości",
+              "aside": "L 1440 px  ·  M 834 px  ·  S 430 px"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Czerń",
+            "hex": "#020202"
+          },
+          {
+            "name": "Grafit",
+            "hex": "#121212"
+          },
+          {
+            "name": "Miedź",
+            "hex": "#E19F65"
+          },
+          {
+            "name": "Ciemna miedź",
+            "hex": "#623914"
+          },
+          {
+            "name": "Biel",
+            "hex": "#FFFFFF"
+          }
+        ]
+      },
+      "core-motion-physiotherapy": {
+        "title": "Broszura - Coremotion Physiotherapy",
+        "headline": "Broszura tri-fold\nkliniki fizjoterapii",
+        "description": "Ulotka **Coremotion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki - _„Życie bez bólu”_ - oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
+        "dates": "Sie 2024 - Wrz 2024",
+        "tags": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe InDesign"
+        ],
+        "images": [
+          "/projects/core-motion-physiotherapy/mockup2.jpg",
+          "/projects/core-motion-physiotherapy/mockup3.jpg"
+        ],
+        "name": "Coremotion Physiotherapy",
+        "category": "print",
+        "kind": "Broszura",
+        "period": "Sie - Wrz 2024",
+        "short": "Broszura kliniki z hasłem „Życie bez bólu” - przejrzyście o usługach.",
+        "heroName": "Coremotion",
+        "cover": "/projects/core-motion-physiotherapy/cover.jpg",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Projekt ulotki tri-fold",
+              "items": [
+                {
+                  "image": "/projects/core-motion-physiotherapy/outside.jpg",
+                  "w": 1244,
+                  "h": 878,
+                  "title": "Strona zewnętrzna",
+                  "caption": "Okładka z logo i hasłem, panel tylny z kontaktem"
+                },
+                {
+                  "image": "/projects/core-motion-physiotherapy/inside.jpg",
+                  "w": 1244,
+                  "h": 878,
+                  "title": "Strona wewnętrzna",
+                  "caption": "Usługi, metody leczenia i filozofia kliniki"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "print",
+              "title": "Ulotka w druku",
+              "aside": "Format DL  ·  składana na trzy"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Granat",
+            "hex": "#365296"
+          },
+          {
+            "name": "Niebieski",
+            "hex": "#5F84C3"
+          },
+          {
+            "name": "Zieleń",
+            "hex": "#84C59D"
+          },
+          {
+            "name": "Śliwka",
+            "hex": "#AD69A8"
+          },
+          {
+            "name": "Lawenda",
+            "hex": "#D4D6E9"
+          },
+          {
+            "name": "Mgła",
+            "hex": "#EFF1F1"
+          }
+        ]
       },
       "vasabi": {
         "title": "Menu Restauracji - Vasabi",
@@ -292,31 +425,109 @@
         "category": "print",
         "kind": "Menu restauracji",
         "period": "Lut - Mar 2024",
-        "short": "Nowoczesny minimalizm połączony z tradycyjną estetyką japońską."
+        "short": "Nowoczesny minimalizm połączony z tradycyjną estetyką japońską.",
+        "palette": [
+          {
+            "name": "Kremowy",
+            "hex": "#F2F3DF"
+          },
+          {
+            "name": "Czerwony",
+            "hex": "#D66145"
+          },
+          {
+            "name": "Zielony",
+            "hex": "#5D883C"
+          },
+          {
+            "name": "Brązowy",
+            "hex": "#634438"
+          },
+          {
+            "name": "Beżowy",
+            "hex": "#E1DDC9"
+          }
+        ]
       },
-      "core-motion-physiotherapy": {
-        "title": "Broszura - Coremotion Physiotherapy",
-        "headline": "Broszura kliniki fizjoterapii",
-        "description": "Ulotka **Coremotion Physiotherapy** została zaprojektowana tak, aby przekazywać misję kliniki - _„Życie bez bólu”_ - oraz w przejrzysty i przystępny sposób dostarczać najważniejszych informacji o oferowanych usługach fizjoterapeutycznych.",
-        "dates": "Sie 2024 - Wrz 2024",
+      "homely": {
+        "title": "Landing page RWD agencji nieruchomości - Homely",
+        "headline": "Landing page RWD\nagencji nieruchomości",
+        "description": "Homely to koncepcja strony agencji nieruchomości, która pomaga znaleźć wymarzony dom. Projekt przeszedł pełną drogę - od szkicu i wireframe'ów, przez koncepcję UI kitu, po gotowy interfejs w trzech rozdzielczościach.",
+        "dates": "Gru 2025",
         "tags": [
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-          "Adobe InDesign"
+          "Figma"
         ],
         "images": [
-          "/projects/core-motion-physiotherapy/mockup2.jpg",
-          "/projects/core-motion-physiotherapy/mockup3.jpg"
+          "/projects/homely/cover.png"
         ],
-        "name": "Coremotion Physiotherapy",
-        "category": "print",
-        "kind": "Broszura",
-        "period": "Sie - Wrz 2024",
-        "short": "Broszura kliniki z hasłem „Życie bez bólu” - przejrzyście o usługach."
+        "name": "Homely",
+        "category": "web",
+        "kind": "Landing page RWD",
+        "period": "Gru 2025",
+        "short": "Strona agencji nieruchomości od szkicu do gotowego UI - desktop, tablet i mobile.",
+        "cover": "/projects/homely/cover.png",
+        "categoryLabel": "Web · UX/UI",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Od wireframe'u do gotowego UI",
+              "items": [
+                {
+                  "image": "/projects/homely/wireframe.png",
+                  "title": "Wireframe",
+                  "caption": "Układ sekcji w siatce 1440 px, bez kolorów i zdjęć",
+                  "w": 1248,
+                  "h": 1604
+                },
+                {
+                  "image": "/projects/homely/ui.png",
+                  "title": "Gotowy UI",
+                  "caption": "Kolory marki, zdjęcia ofert i typografia Open Sans",
+                  "w": 1248,
+                  "h": 1604
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "rwd",
+              "title": "Jedna strona,\ntrzy rozdzielczości",
+              "aside": "L 1440 px  ·  M 834 px  ·  S 430 px"
+            },
+            {
+              "type": "stage",
+              "stage": "projects",
+              "title": "Podstrona Projects"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Niebieski",
+            "hex": "#2563EB"
+          },
+          {
+            "name": "Jasnoniebieski",
+            "hex": "#D9E6FF"
+          },
+          {
+            "name": "Pomarańczowy",
+            "hex": "#EB8831"
+          },
+          {
+            "name": "Grafit",
+            "hex": "#1F1F1F"
+          },
+          {
+            "name": "Biały",
+            "hex": "#FFFFFF"
+          }
+        ]
       },
       "kvisual": {
         "title": "Branding / identyfikacja wizualna - Kvisual",
-        "headline": "Identyfikacja wizualna studia graficznego",
+        "headline": "Identyfikacja wizualna\nstudia graficznego",
         "description": "Kvisual to nowoczesne studio projektowania graficznego specjalizujące się w tworzeniu identyfikacji wizualnych, materiałów reklamowych oraz kampanii promocyjnych. Marka łączy **prostotę z ekspresyjnością**, wykorzystując czyste linie, kontrastujące kolory oraz **geometryczne logo inspirowane futurystycznym designem**.",
         "dates": "Cze 2025 - Lip 2025",
         "tags": [
@@ -336,7 +547,144 @@
         "category": "branding",
         "kind": "Identyfikacja wizualna",
         "period": "Cze - Lip 2025",
-        "short": "Studio graficzne - prostota, ekspresja i geometryczne, futurystyczne logo."
+        "short": "Identyfikacja studia graficznego - geometryczne logo, wizytówki i materiały marki.",
+        "metaKind": "Branding",
+        "cover": "/projects/kvisual/cover.jpg",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Identyfikacja w użyciu",
+              "items": [
+                {
+                  "image": "/projects/kvisual/sign.jpg",
+                  "w": 1244,
+                  "h": 700,
+                  "title": "Sygnet",
+                  "caption": "Geometryczny znak inspirowany futurystycznym designem"
+                },
+                {
+                  "image": "/projects/kvisual/logotype.jpg",
+                  "w": 1244,
+                  "h": 700,
+                  "title": "Logotyp",
+                  "caption": "Pełna nazwa marki w geometrycznym stylu sygnetu"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "brand",
+              "title": "Marka w praktyce",
+              "aside": "Pieczątka  ·  social media  ·  opakowanie"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Fiolet",
+            "hex": "#5407B8"
+          },
+          {
+            "name": "Jasny fiolet",
+            "hex": "#8350C4"
+          },
+          {
+            "name": "Czerń",
+            "hex": "#1C1C1C"
+          },
+          {
+            "name": "Grafit",
+            "hex": "#3D3C3F"
+          },
+          {
+            "name": "Jasna szarość",
+            "hex": "#E6E6E6"
+          }
+        ]
+      },
+      "artiko-festival": {
+        "title": "Identyfikacja wizualna festiwalu - Artiko Festival",
+        "headline": "Identyfikacja wizualna\nfestiwalu połączeń",
+        "description": "Artiko Festival to coroczny **festiwal połączeń międzyludzkich** - trochę jak networking, ale nastawiony bardziej na kontakty osobiste. Zaprojektowałam dla niego **pełną identyfikację**: logo, księgę znaku, materiały drukowane, social media i stronę internetową.",
+        "dates": "Sty 2026",
+        "tags": [
+          "Figma",
+          "Adobe Photoshop"
+        ],
+        "images": [
+          "/projects/artiko-festival/cover.jpg"
+        ],
+        "name": "Artiko Festival",
+        "category": "branding",
+        "kind": "Identyfikacja festiwalu",
+        "period": "Sty 2026",
+        "short": "Pełna identyfikacja festiwalu - logo, księga znaku, druk, social media i strona www.",
+        "cover": "/projects/artiko-festival/cover.jpg",
+        "heroName": "Artiko",
+        "metaKind": "Branding · Web",
+        "showcase": {
+          "sections": [
+            {
+              "type": "pair",
+              "title": "Logo na jasnym i ciemnym tle",
+              "items": [
+                {
+                  "image": "/projects/artiko-festival/logo-dark.jpg",
+                  "w": 1244,
+                  "h": 1176,
+                  "title": "Ciemny motyw",
+                  "caption": "Logo na tle Dark Violet z konstelacjami"
+                },
+                {
+                  "image": "/projects/artiko-festival/logo-light.jpg",
+                  "w": 1244,
+                  "h": 1176,
+                  "title": "Jasny motyw",
+                  "caption": "Ta sama kompozycja na białym tle"
+                }
+              ]
+            },
+            {
+              "type": "stage",
+              "stage": "print",
+              "title": "Materiały drukowane i gadżety",
+              "aside": "Przystanek  ·  billboard  ·  rollup  ·  torba  ·  opaska"
+            },
+            {
+              "type": "stage",
+              "stage": "social",
+              "title": "Social media i strona www",
+              "aside": "Karuzela na Instagram  ·  strona na laptopie"
+            }
+          ]
+        },
+        "palette": [
+          {
+            "name": "Dark Violet",
+            "hex": "#1A1028"
+          },
+          {
+            "name": "Violet",
+            "hex": "#7C5CBF"
+          },
+          {
+            "name": "Light Violet",
+            "hex": "#9B7FE8"
+          },
+          {
+            "name": "Mint",
+            "hex": "#6ECFB5"
+          },
+          {
+            "name": "Dark Mint",
+            "hex": "#1E9E75"
+          },
+          {
+            "name": "Modern Gold",
+            "hex": "#EF9F27"
+          }
+        ]
       }
     }
   },

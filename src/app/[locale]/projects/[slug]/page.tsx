@@ -1,6 +1,7 @@
 import Pill from "@/components/home/pill";
 import { CONTAINER } from "@/components/home/section";
 import Gallery from "@/components/project/gallery";
+import ShowcaseSections, { Showcase } from "@/components/project/showcase";
 import getDictionary from "@/dict/dict";
 import { LOCALES, PROJECTS } from "@/lib/const";
 import { getProjectSections } from "@/lib/project-content";
@@ -78,6 +79,9 @@ const proseComponents: Components = {
 };
 
 const BODY = "flex flex-col gap-5 text-lg leading-[1.6] text-muted-ink";
+const ROW = "flex flex-col gap-5 border-t-[1.5px] border-ink pb-12 pt-8 lg:flex-row lg:gap-16";
+const ROW_TITLE =
+  "font-display text-[26px] font-bold leading-[1.1] tracking-[-0.02em] text-ink md:text-[32px] lg:w-[400px] lg:shrink-0";
 
 export default async function Page({
   params: { locale, slug },
@@ -92,16 +96,22 @@ export default async function Page({
 
   const project = items[slug as keyof typeof items];
   const sections = await getProjectSections(lang, slug);
-  const categoryLabel =
+  const categoryName =
     home.projects.filters[project.category as keyof typeof home.projects.filters] ??
     project.category;
+  // The meta row may spell the category out in more detail (e.g. "Web · UX/UI").
+  const categoryLabel = "categoryLabel" in project ? project.categoryLabel : categoryName;
   const tools = project.tags.map((tag) => tag.replace(/^Adobe /, ""));
+  const showcase = "showcase" in project ? (project.showcase as Showcase) : null;
+  const palette = "palette" in project ? project.palette : [];
+  // Figma shortens some hero titles ("Artiko" for "Artiko Festival").
+  const heroName = "heroName" in project ? project.heroName : project.name;
 
   const meta = [
-    { label: labels.kind, value: project.kind },
+    { label: labels.kind, value: "metaKind" in project ? project.metaKind : project.kind },
     { label: labels.dates, value: project.period },
     { label: labels.category, value: categoryLabel },
-  ];
+  ].filter((item) => item.value);
 
   return (
     <article>
@@ -115,17 +125,17 @@ export default async function Page({
         </Link>
         <div className="flex flex-wrap gap-2">
           <Pill variant="plum" className="text-[13px]">
-            {categoryLabel}
+            {categoryName}
           </Pill>
           <Pill variant="filled" className="text-[13px]">
             {labels.concept}
           </Pill>
         </div>
         <h1 className="font-display text-[clamp(64px,10.4vw,150px)] font-extrabold leading-[0.86] tracking-[-0.04em] text-ink">
-          {project.name}
+          {heroName}
         </h1>
         <div className="flex flex-col gap-6 pb-4 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
-          <p className="max-w-[520px] font-display text-[30px] font-bold leading-[1.05] tracking-[-0.02em] text-plum-text md:text-[44px]">
+          <p className="max-w-[520px] whitespace-pre-line font-display text-[30px] font-bold leading-[1.05] tracking-[-0.02em] text-plum-text md:text-[44px]">
             {project.headline}
           </p>
           <Markdown
@@ -159,30 +169,46 @@ export default async function Page({
         </dl>
       </section>
 
-      {/* Gallery */}
-      <section className={CONTAINER} aria-label={project.title}>
-        <Gallery
-          images={project.images}
-          alt={project.title}
-          labels={{
-            prev: labels.prev,
-            next: labels.next,
-            open: labels.open,
-            close: labels.close,
-          }}
-        />
-      </section>
+      {showcase ? (
+        <ShowcaseSections slug={slug} showcase={showcase} name={project.name} />
+      ) : (
+        <section className={CONTAINER} aria-label={project.title}>
+          <Gallery
+            images={project.images}
+            alt={project.title}
+            labels={{
+              prev: labels.prev,
+              next: labels.next,
+              open: labels.open,
+              close: labels.close,
+            }}
+          />
+        </section>
+      )}
 
       {/* Project details */}
       <section className={cn(CONTAINER, "pb-16 pt-16 md:pb-24 md:pt-28")}>
+        {palette.length > 0 && (
+          <div className={ROW}>
+            <h2 className={ROW_TITLE}>{labels.palette}</h2>
+            <ul className="flex min-w-0 flex-1 flex-wrap gap-4">
+              {palette.map((color) => (
+                <li key={color.hex} className="flex w-[104px] flex-col">
+                  <span
+                    aria-hidden="true"
+                    className="h-[72px] rounded-xl border border-line"
+                    style={{ backgroundColor: color.hex }}
+                  />
+                  <span className="mt-2.5 text-sm font-bold text-ink">{color.name}</span>
+                  <span className="text-[13px] text-muted-ink">{color.hex}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         {sections.map((section) => (
-          <div
-            key={section.title}
-            className="flex flex-col gap-5 border-t-[1.5px] border-ink pb-12 pt-8 lg:flex-row lg:gap-16"
-          >
-            <h2 className="font-display text-[26px] font-bold leading-[1.1] tracking-[-0.02em] text-ink md:text-[32px] lg:w-[400px] lg:shrink-0">
-              {section.title}
-            </h2>
+          <div key={section.title} className={ROW}>
+            <h2 className={ROW_TITLE}>{section.title}</h2>
             <div className="flex min-w-0 flex-1 flex-col gap-5">
               {section.body && (
                 <Markdown components={proseComponents} className={BODY}>

@@ -19,7 +19,7 @@ export default function Projects({ locale, labels, items }: Props) {
       kind: item.kind,
       period: item.period,
       short: item.short,
-      cover: item.images[0],
+      cover: "cover" in item ? item.cover : item.images[0],
       tools: item.tags.map((tag) => tag.replace(/^Adobe /, "")),
     })
   );

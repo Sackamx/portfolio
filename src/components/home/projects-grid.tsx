@@ -38,7 +38,11 @@ const CATEGORY_PILL: Record<string, PillVariant> = {
   social: "filled",
 };
 
-const FILTERS: Filter[] = ["all", "web", "print", "branding", "social"];
+// Card badges appear on hover/focus; touch screens (no hover) always show them.
+const REVEAL =
+  "transition-opacity duration-300 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:opacity-100 group-focus-visible:opacity-100";
+
+const FILTERS: Filter[] =["all", "web", "print", "branding", "social"];
 
 export default function ProjectsGrid({ projects, labels }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
@@ -107,7 +111,7 @@ function ProjectCard({
             {labels.cta}
           </span>
         </div>
-        <span className="absolute left-3.5 top-3.5 rounded-full bg-white px-2.5 py-[5px] text-[11px] font-bold leading-none tracking-[0.04em] text-night">
+        <span className={cn("absolute left-3.5 top-3.5 rounded-full bg-white px-2.5 py-[5px] text-[11px] font-bold leading-none tracking-[0.04em] text-night", REVEAL)}>
           {labels.concept}
         </span>
       </div>
@@ -117,13 +121,14 @@ function ProjectCard({
         </h3>
         <Pill
           variant={CATEGORY_PILL[project.category] ?? "filled"}
-          className="shrink-0 text-xs"
+          className={cn("shrink-0 text-xs", REVEAL)}
         >
           {labels.filters[project.category as Filter] ?? project.category}
         </Pill>
       </div>
       <p className="whitespace-pre-wrap text-sm font-medium text-plum-text">
-        {`${project.kind}  ·  ${project.period}`}
+        {/* Undated projects show their tools instead, as in the Figma card. */}
+        {`${project.kind}  ·  ${project.period || project.tools.join(", ")}`}
       </p>
       <p className="text-[15px] leading-[1.5] text-muted-ink">{project.short}</p>
       <ul className="flex flex-wrap gap-1.5">
