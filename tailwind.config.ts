@@ -21,8 +21,32 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        display: ['"Funnel Display"', "var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        paper: "var(--paper)",
+        ink: "var(--ink)",
+        plum: {
+          DEFAULT: "var(--plum)",
+          text: "var(--plum-text)",
+          line: "var(--plum-line)",
+        },
+        lilac: "var(--lilac)",
+        lime: "var(--lime)",
+        "muted-ink": "var(--muted-ink)",
+        line: "var(--line)",
+        rule: "var(--rule)",
+        placeholder: "var(--placeholder)",
+        "tag-line": "var(--tag-line)",
+        surface: {
+          DEFAULT: "var(--surface)",
+          line: "var(--surface-line)",
+        },
+        night: {
+          DEFAULT: "var(--night)",
+          line: "var(--night-line)",
+          foreground: "var(--on-night)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
