@@ -26,7 +26,7 @@ export default function Hero({ hero, whatsappUrl }: Props) {
         <Pill variant="filled" className="whitespace-pre">
           {hero.greeting}
         </Pill>
-        <h1 className="font-display text-[clamp(84px,13.2vw,190px)] font-extrabold leading-[0.86] tracking-[-0.04em] text-ink">
+        <h1 className="font-display text-[clamp(73px,11.46vw,165px)] font-extrabold leading-[0.86] tracking-[-0.04em] text-ink">
           <span className="block">{hero.firstName}</span>
           <span className="block text-plum-text">{hero.lastName}</span>
         </h1>
